@@ -1,0 +1,39 @@
+<img class="closeButton" src="img/artwork-2.svg" width="14" height="18" alt=""
+     data-mu-svgfallback="img/artwork%202_poster_.png" ng-click="closeModal()">
+
+<div class="modal-header addModelHeader">
+    <p class="modal-title addModalTitle modal-config-title">PUSH NOTIFICATIONS</p>
+</div>
+<div class="modal-body">
+    <div class="modalControls">
+        <form class="message" novalidate>
+            <div class="inputs" style="height:130px;">
+                <div ng-click="$('#cellPhone').focus()" class="form-group">
+                    <div class="checkbox">
+                        <label class="configLabel">
+                            <input type="checkbox" class="custom-check" ng-model="isCellPhone">Turn on text notifications (yes) (No)</label>
+                    </div>
+                    <label class="configLabel" for="cellPhone">Provide a phone to push text notifications to:</label>
+                    <input type="text"  class="form-control" ng-readonly="!isCellPhone" id="cellPhone" ng-model="cellPhone"
+                           placeholder="">
+                </div>
+            </div>
+            <br />
+            <div ng-click="$('#email').focus()" class="inputs" style="height:130px;">
+                <div  class="form-group">
+                    <label class="configLabel" for="cellPhone">Provide an email to push text notifications to:</label>
+                    <input type="text" class="form-control" id="email"  ng-model="email" placeholder="">
+                </div>
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <button class="form-control btnAddModel" ng-click="saveConfig(); ">SAVE
+                </button>
+            </div>
+        </form>
+
+        <div class="spinner" ng-show="uploading">
+            <div class="whirl">
+            </div>
+        </div>
+    </div>
+</div>

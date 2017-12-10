@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-md-4 modelDescriptionColumn">
+        <div style="color:#ff9900;">
+            DESCRIPTION
+        </div>
+        <p class="description">
+            <textarea
+                    id="txtDesc{{item.id}}"
+                    wrap="hard"
+                    ng-model="item.description"
+                    placeholder="Enter a description for your model..."
+                    class="form-control descriptionInput" rows="5"></textarea>
+        </p>
+        </div>
+    <div class="col-md-4 modelDescriptionColumn">
+
+        <div style="color:#ff9900;">
+            TAGS
+        </div>
+        <p class="tags">
+            <textarea
+                    id="txtTag{{item.id}}"
+                    wrap="hard"
+                    ng-model="item.tags"
+                    placeholder="Enter custom tags for your model. Separate each with a comma."
+                    class="form-control tagsInput" rows="5"></textarea>
+        </p>
+
+    </div>
+    <div class="col-md-4  modelDescriptionColumn" style="padding-left:0;">
+        <div style="color:#ff9900;">
+            MODEL
+        </div>
+        <div class="uploadModelSection" style="height:258px;">
+            <div ng-file-upload-wrapper file="file" required="true"
+                 change="setSelectedFileToUpdate"
+                 accept="'{{acceptedLanguages[item.language]}}'" accept-description=""></div>
+        </div>
+        <div class="editActionButton">
+            <button ng-click="cancelOperation(item)"
+                    class="saveButton pull-right">CANCEL
+            </button>
+            <button ng-click="updateModel(item);"
+                    class="saveButton pull-right">SAVE
+            </button>
+        </div>
+    </div>
+    <div class="spinner" ng-show="uploading">
+        <div class="whirl">
+
+        </div>
+    </div>
+</div>

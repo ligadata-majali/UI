@@ -1,0 +1,48 @@
+.version.links /* version checker */
+{
+	color: #0000F8;
+	background-color: #1AA6C7;
+}
+
+#page
+{
+	z-index: 1;
+	min-height: 401px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	padding-top: 37px;
+	padding-bottom: 62px;
+	width: 100%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#u15196-39
+{
+	z-index: 2;
+	min-height: 680px;
+	background-color: transparent;
+	position: relative;
+	width: 37.04%;
+	margin-left: 2.66%;
+}
+
+#u15196-3,#u15196-6,#u15196-9,#u15196-12,#u15196-15,#u15196-18,#u15196-21,#u15196-24,#u15196-27,#u15196-30,#u15196-33,#u15196-36
+{
+	padding-bottom: 10px;
+}
+
+#muse_css_mq,.html
+{
+	background-color: #FFFFFF;
+}
+
+body
+{
+	position: relative;
+	min-width: 320px;
+}
+

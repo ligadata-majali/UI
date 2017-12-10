@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="kmapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--The viewport meta tag is used to improve the presentation and behavior of the samples
+      on iOS devices-->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>Kamanja</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="angular-toastr/dist/angular-toastr.min.css" />
+    <link rel="stylesheet" href="bootstrap-vertical-tabs/bootstrap.vertical-tabs.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/whirl.min.css"/>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid fullWidth">
+    <header ng-show="globals.authenticated ==  true"></header>
+    <div ui-view></div>
+</div>
+
+<!-- scripts -->
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="js/general/common.js"></script>
+<script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="angular/angular.min.js"></script>
+<script type="text/javascript" src="angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" src="inputs/dist/js/inputs-min.js"></script>
+<script type="text/javascript" src="angular-resource/angular-resource.min.js"></script>
+<script type="text/javascript" src="angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="underscore/underscore-min.js"></script>
+<script type="text/javascript" src="moment/moment.js"></script>
+<script type="text/javascript" src="moment-duration-format/lib/moment-duration-format.js"></script>
+<script type="text/javascript" src="js/smoothie.js"></script>
+<script type="text/javascript" src="async/dist/async.min.js"></script>
+<script type="text/javascript" src="ng-file-upload/ng-file-upload-shim.js"></script>
+<script type="text/javascript" src="ng-file-upload/ng-file-upload.js"></script>
+<script type="text/javascript" src="angular-toastr/dist/angular-toastr.js"></script>
+<script type="text/javascript" src="angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script type="text/javascript" src="bootbox.js/bootbox.js"></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+<script type="text/javascript" src="js/kmapp.js"></script>
+<script type="text/javascript" src="js/services/serviceBase.js"></script>
+<script type="text/javascript" src="js/services/serviceAuthentication.js"></script>
+<script type="text/javascript" src="js/services/serviceUtil.js"></script>
+<script type="text/javascript" src="js/services/serviceRest.js"></script>
+<script type="text/javascript" src="js/services/serviceViewModel.js"></script>
+<script type="text/javascript" src="js/services/serviceData.js"></script>
+<script type="text/javascript" src="js/services/socketService.js"></script>
+<script type="text/javascript" src="js/directives/mainDirectives.js"></script>
+<script type="text/javascript" src="js/directives/d3Directives.js"></script>
+<script type="text/javascript" src="js/directives/canvasAreaChart.js"></script>
+<script type="text/javascript" src="js/directives/ngFileUploadWrapper.js"></script>
+<script type="text/javascript" src="js/directives/viewModelAndEditModelDirectives.js"></script>
+<script type="text/javascript" src="js/directives/toggle-checkbox.js"></script>
+<script type="text/javascript" src="js/controllers/loginCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/mainCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/addNewModelModalCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/addNewMessageModalCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/addNewAdapterMessageModalCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/circleAndChartCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/modelsTableCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/configModalCtrl.js"></script>
+</body>
+</html>

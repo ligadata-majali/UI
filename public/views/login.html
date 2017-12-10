@@ -1,0 +1,27 @@
+<section id="login">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="loginform" class="center-block" role="form">
+                    <div class="">
+                        <h1>Kamanja Demo</h1>
+                        <form role="form" ng-submit="login(username, password);" id="login-form">
+                            <div class="form-group">
+                                <label for="username" class="sr-only">Username</label>
+                                <input type="text" name="username" id="username" required ng-model="username"
+                                       class="form-control" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="sr-only">Password</label>
+                                <input type="password" name="password" required id="password" ng-model="password"
+                                       class="form-control" placeholder="Password">
+                            </div>
+
+                            <button type="submit" id="btn-login"  class="btn btn-custom btn-lg btn-block"><i class="glyphicon glyphicon-log-in"></i> Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- /.col-xs-12 -->
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>

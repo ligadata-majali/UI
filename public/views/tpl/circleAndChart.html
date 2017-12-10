@@ -1,0 +1,223 @@
+<section class="circlegraph">
+    <div class="row"> <!-- fix margin -->
+        <div class="col-xs-12 col">
+            <div class="row" id="chartContainer"> <!-- fix width -->
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="chartMenu">
+                                <li style="width:20%" class="active"><a href="javascript:void();"
+                                                                        ng-click="setFilter('active')"
+                                                                        data-target="#dvActivity"
+                                                                        data-toggle="tab">ACTIVITY</a></li>
+                                <li style="width:20%"><a href="javascript:void();" ng-click="setFilter('lastHour')"
+                                                         data-target="#dvActivated"
+                                                         data-toggle="tab">ACTIVATED</a></li>
+                                <li style="width:20%"><a href="javascript:void();" ng-click="setFilter('highest')"
+                                                         data-target="#dvRecordsIn"
+                                                         data-toggle="tab">RECORDS IN</a></li>
+                                <li style="width:20%"><a href="javascript:void();" ng-click="setFilter('rec20')"
+                                                         data-target="#dvRecordsOut"
+                                                         data-toggle="tab">% OF RECORDS OUT</a></li>
+                                <li style="width:20%"><a href="javascript:void();" ng-click="setFilter('java')"
+                                                         data-target="#dvLanguage"
+                                                         data-toggle="tab">LANGUAGE</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="glowLine"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="tab-content activities">
+                                <div id="dvActivity" class="tab-pane fade panel-heading in active">
+                                    <ul class="list-inline dateFilters">
+                                        <li style="width: calc(50% - 2px);" class="doubleTabs"
+                                            ng-click="setFilter('active')" data-target="#dvActive" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('active')}" class="dvDateFilters">
+                                                <span>ACTIVE</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(50% - 2px);" class="doubleTabs"
+                                            ng-click="setFilter('inactive')" data-target="#dvInActive"
+                                            data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('inactive')}" class="dvDateFilters">
+                                                <span>INACTIVE</span>
+                                            </div>
+                                        </li>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="dvActivated" class="tab-pane fade panel-heading">
+                                    <ul class="list-inline dateFilters">
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('lastHour')" data-target="#dvLastHour"
+                                            data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('lastHour')}" class="dvDateFilters">
+                                                <span>Last Hour</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('last24Hours')" data-target="#dvLast24Hours"
+                                            data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('last24Hours')}"
+                                                 class="dvDateFilters">
+                                                <span>Last 24 Hours</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('last7Days')" data-target="#dvLast7Days"
+                                            data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('last7Days')}" class="dvDateFilters">
+                                                <span>Last 7 Days</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('last30Days')" data-target="#dvLast30Days"
+                                            data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('last30Days')}"
+                                                 class="dvDateFilters">
+                                                <span>Last 30 Days</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('plus30Days')" data-target="#dvPlus30Days"
+                                            data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('plus30Days')}"
+                                                 class="dvDateFilters">
+                                                <span>Last 30+ Days</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="dvRecordsIn" class="tab-pane fade panel-heading">
+                                    <ul class="list-inline dateFilters">
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('highest')" data-target="#dvHighest" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('highest')}" class="dvDateFilters">
+                                                <span>HIGHEST</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('high')" data-target="#dvHigh" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('high')}" class="dvDateFilters">
+                                                <span>HIGH</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('mid')" data-target="#dvMid" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('mid')}" class="dvDateFilters">
+                                                <span>MID</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('low')" data-target="#dvLow" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('low')}" class="dvDateFilters">
+                                                <span>LOW</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('lowest')" data-target="#dvLowest" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('lowest')}" class="dvDateFilters">
+                                                <span>LOWEST</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="dvRecordsOut" class="tab-pane fade panel-heading">
+                                    <ul class="list-inline dateFilters">
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('rec20')" data-target="#dvOut1" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('rec20')}" class="dvDateFilters">
+                                                <span>0-20%</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('rec40')" data-target="#dvOut2" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('rec40')}" class="dvDateFilters">
+                                                <span>21-40%</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('rec60')" data-target="#dvOut3" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('rec60')}" class="dvDateFilters">
+                                                <span>41-60%</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('rec80')" data-target="#dvOut4" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('rec80')}" class="dvDateFilters">
+                                                <span>61-80%</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(20% - 3px);" class="doubleTabs"
+                                            ng-click="setFilter('rec100')" data-target="#dvOut5" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('rec100')}" class="dvDateFilters">
+                                                <span>81-100%</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="dvLanguage" class="tab-pane fade panel-heading">
+                                    <ul class="list-inline dateFilters">
+                                        <li style="width: calc(25% - 3px);" class="doubleTabs" class="quadroTabs"
+                                            ng-click="setFilter('java')" data-target="#dvJava" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('java')}" class="dvDateFilters">
+                                                <span>JAVA</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(25% - 3px);" class="doubleTabs" class="quadroTabs"
+                                            ng-click="setFilter('scala')" data-target="#dvScala" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('scala')}" class="dvDateFilters">
+                                                <span>SCALA</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(25% - 3px);" class="doubleTabs" class="quadroTabs"
+                                            ng-click="setFilter('pmml')" data-target="#dvPMML" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('pmml')}" class="dvDateFilters">
+                                                <span>PMML</span>
+                                            </div>
+                                        </li>
+                                        <li style="width: calc(25% - 3px);" class="doubleTabs" class="quadroTabs"
+                                            ng-click="setFilter('python')" data-target="#dvPython" data-toggle="tab">
+                                            <div ng-class="{arrow_box: isActiveTab('python')}" class="dvDateFilters">
+                                                <span>PYTHON</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tab-content tbContent">
+                                    <div class="areaChart tab-pane fade in active">
+                                        <area-chart models-number="{{filteredModels.length}}" interval="interval"
+                                                    filter-name="{{filterName}}" height="258" width="792"
+                                                    data="chartData"></area-chart>
+                                        <div class="canvasWrapper">
+                                            <canvas class="canvasAreaChart" id="canvasAreaChart" canvas-area-chart
+                                                    height="170" width="720" models-number="{{filteredModels.length}}"
+                                                    interval="interval" filter-name="{{filterName}}"
+                                                    data="chartData"
+                                                    state="{{models.length}}">
+                                            </canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sunburstWrapper">
+                    <div id="sunburstOuterCircle">
+                        <sunburst-chart data="projectData" fill-area="FillLeftCharts"
+                                        height="390" width="390"></sunburst-chart>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+<div class="alerts">
+    <table class="table table-striped">
+        <tr ng-repeat="alert in alerts track by $index">
+            <td >
+                <a href="javascript:void(0)" ng-click="showAlertInfo = true;">{{alert.title}}</a>
+                <div ng-show="showAlertInfo">
+                  <div class="row">
+                    <div class="col-md-12">
+                    {{alert.content}}
+                  </div>
+                  <div class="col-md-12">
+                    <button type="button" class="btn btn-primary" ng-click="showAlertInfo = false">Confirm</button>
+                    <button type="button" class="btn btn-danger" ng-click="showAlertInfo = false">Reject</button>
+                    <button type="button" class="btn btn-warning" ng-click="showAlertInfo = false">Suspect</button>
+                  </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

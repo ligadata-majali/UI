@@ -1,0 +1,45 @@
+<div class="sunburstChart">
+	<div id="explanation" >
+  	<div id="depth0" ng-show="depth == 0 && isInitialized">
+  		<table>
+  			<tr>
+  				<td rowspan="4">
+  					<img src="/img/pastedsvg.svg" />
+  				</td>
+  				<td class="nums">
+  					<span>{{selectedModelsNo}} <sup>OF</sup> {{TotalModels}}</span>
+  				</td>
+  			</tr>
+  			<tr>
+  				<td class="title">MODELS</td>
+  			</tr>
+  			<tr>
+  				<td class="nums2">
+  					<span>{{selectedProjectsNo}} <sup>OF</sup> {{TotalProjects}}
+  				</td>
+  			</tr>
+  			<tr>
+  				<td class="title2">PROJECTS</td>
+  			</tr>
+  		</table>
+  	</div>
+  	<div id="depth1" ng-show="depth == 1 && isInitialized">
+  		<span>{{selectedProjectName}}</span>
+  	</div>
+  	<div id="depth2" ng-show="depth == 2 && isInitialized">
+  		<div>
+  			<table>
+  				<tr>
+  					<td class="dp2Name">{{selectedModelName}}</td>
+  				</tr>
+  				<tr>
+  					<td>{{active}} | Age: {{selectedModelAge}}</td>
+  				</tr>
+					<tr>
+						<td>Tags: {{tags}}
+					</tr>
+  			</table>
+  		</div>
+  	</div>
+   </div>
+</div>

@@ -1,0 +1,454 @@
+<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" ftp_hostname="ftp://ftp.shantiguy.com" ftp_rootfolder="//public_html/shantiguy.com/design_projects/ligadata/Kamanja/styling/" exportTarget="FTP" domain="shantiguy.com/design_projects/ligadata/Kamanja/styling" resolutions="1x" timestamp="1459361635472">
+  <folder name="css">
+    <file name="site_global.css" crc="131700929"/>
+    <file name="master_filters-expanded-and-selected.css" crc="330519618" ref="filters-expanded-selected"/>
+    <file name="master_a-master-copy.css" crc="278702319" ref="adding-model-description:model-name-and-project-only:uploading-data-model:full-model-expanded:full-model-edit:adding-model-tags"/>
+    <file name="master_filters-expanded.css" crc="20879685" ref="filters"/>
+    <file name="master_no-table-items.css" crc="194996292" ref="top-graph-styling-partial:all-tables-expanded:tables-expanded"/>
+    <file name="master_a-master.css" crc="461406904" ref="index:add-new-model-form"/>
+    <file name="top-graph-styling.css" crc="4083505211" ref="top-graph-styling"/>
+    <file name="adding-model-description.css" crc="80845970" ref="adding-model-description"/>
+    <file name="top-graph-styling-partial.css" crc="3892699496" ref="top-graph-styling-partial"/>
+    <file name="model-name-and-project-only.css" crc="85091503" ref="model-name-and-project-only"/>
+    <file name="filters.css" crc="55723218" ref="filters"/>
+    <file name="links.css" crc="4162496199" ref="links"/>
+    <file name="uploading-data-model.css" crc="4282651114" ref="uploading-data-model"/>
+    <file name="full-model-expanded.css" crc="238418510" ref="full-model-expanded"/>
+    <file name="full-model-edit.css" crc="48894844" ref="full-model-edit"/>
+    <file name="adding-model-tags.css" crc="3801432029" ref="adding-model-tags"/>
+    <file name="all-tables-expanded.css" crc="472691621" ref="all-tables-expanded"/>
+    <file name="tables-expanded.css" crc="3951511261" ref="tables-expanded"/>
+    <file name="index.css" crc="4213088269" ref="index"/>
+    <file name="add-new-model-form.css" crc="5911885" ref="add-new-model-form"/>
+    <file name="filters-expanded-selected.css" crc="317356229" ref="filters-expanded-selected"/>
+  </folder>
+  <folder name="fonts">
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+    <file name="roboto-v15-latin-italic.woff" crc="227641083"/>
+    <file name="roboto-v15-latin-italic.eot" crc="4102462846"/>
+    <file name="roboto-v15-latin-italic.svg" crc="395412861"/>
+    <file name="roboto-condensed-v13-latin-regular.woff" crc="4294573146"/>
+    <file name="roboto-condensed-v13-latin-regular.eot" crc="3929263303"/>
+    <file name="roboto-condensed-v13-latin-regular.svg" crc="3910654500"/>
+    <file name="roboto-v15-latin-300.woff" crc="3812196088"/>
+    <file name="roboto-v15-latin-300.eot" crc="120879704"/>
+    <file name="roboto-v15-latin-300.svg" crc="91319428"/>
+    <file name="roboto-v15-latin-700.woff" crc="392048298"/>
+    <file name="roboto-v15-latin-700.eot" crc="4115834427"/>
+    <file name="roboto-v15-latin-700.svg" crc="4066242874"/>
+    <file name="roboto-v15-latin-regular.woff" crc="3906269182"/>
+    <file name="roboto-v15-latin-regular.eot" crc="4056042434"/>
+    <file name="roboto-v15-latin-regular.svg" crc="4240436343"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="207176553" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:top-graph-styling:full-model-edit:filters:filters-expanded-selected:all-tables-expanded:links"/>
+    <file name="museutils.js" crc="3790713428" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:top-graph-styling:full-model-edit:filters:filters-expanded-selected:all-tables-expanded:links"/>
+    <file name="whatinput.js" crc="84559013" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:top-graph-styling:full-model-edit:filters:filters-expanded-selected:all-tables-expanded:links"/>
+    <file name="jquery.watch.js" crc="4244854265" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:top-graph-styling:full-model-edit:filters:filters-expanded-selected:all-tables-expanded:links"/>
+    <file name="pie.js" crc="3827607177" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:top-graph-styling:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="webpro.js" crc="329496574" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="form_check.php" crc="3805695515" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="form_throttle.php" crc="3802629389" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="form_process.php" crc="54267062" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="form-u599.php" crc="498173717" ref="index:add-new-model-form"/>
+    <file name="musewpslideshow.js" crc="394033048" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:full-model-edit:filters:filters-expanded-selected"/>
+    <file name="jquery.museoverlay.js" crc="4265131668" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:full-model-edit:filters:filters-expanded-selected"/>
+    <file name="touchswipe.js" crc="497316881" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:full-model-edit:filters:filters-expanded-selected"/>
+    <file name="form-u2422.php" crc="71495819" ref="add-new-model-form"/>
+    <file name="form-u3230.php" crc="525916183" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:full-model-edit"/>
+    <file name="form-u4308.php" crc="222605" ref="adding-model-description"/>
+    <file name="form-u4492.php" crc="416442382" ref="adding-model-tags"/>
+    <file name="form-u6335.php" crc="432905467" ref="tables-expanded:top-graph-styling-partial:all-tables-expanded"/>
+    <file name="form-u10114.php" crc="3901563414" ref="filters"/>
+    <file name="form-u11046.php" crc="4177675101" ref="filters-expanded-selected"/>
+  </folder>
+  <folder name="images">
+    <file name="topbg_elephant.png" crc="509587637" seo="true" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="top_graph_animation.swf" crc="3993547444" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="kamanja-text-logo.svg" crc="4195396769" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="kamanja text logo_poster_.png" crc="318526582" ref="index"/>
+    <file name="headerrecordscount.swf" crc="4121872217" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="u602-13.png" crc="3905709832" ref="index:add-new-model-form"/>
+    <file name="u602-13-r.png" crc="350995148" ref="index:add-new-model-form"/>
+    <file name="u602-13-m.png" crc="509882678" ref="index:add-new-model-form"/>
+    <file name="u602-13-fs.png" crc="336816728" ref="index:add-new-model-form"/>
+    <file name="search-icon.svg" crc="363612617" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="search icon_poster_.png" crc="452287683" ref="index"/>
+    <file name="u14987-4.png" crc="4147053766" ref="index:add-new-model-form"/>
+    <file name="blank.gif" crc="4208392903" ref="index:add-new-model-form"/>
+    <file name="u14986_states.png" crc="3933166799" ref="index:add-new-model-form"/>
+    <file name="u14986_states-r.png" crc="489975718" ref="index:add-new-model-form"/>
+    <file name="mini-bar-graph.svg" crc="277104180" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="mini bar graph_poster_.png" crc="35389360" ref="index"/>
+    <file name="angel.svg" crc="38167019" ref="index:add-new-model-form:model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="angel_poster_.png" crc="324926662" ref="index"/>
+    <file name="artwork-2.svg" crc="14010884" ref="add-new-model-form"/>
+    <file name="artwork 2_poster_.png" crc="4064014000" ref="add-new-model-form"/>
+    <file name="u2438-17.png" crc="4085702180" ref="add-new-model-form"/>
+    <file name="u2438-17-r.png" crc="336782699" ref="add-new-model-form"/>
+    <file name="u2438-17-m.png" crc="8779189" ref="add-new-model-form"/>
+    <file name="u2438-17-fs.png" crc="4274814681" ref="add-new-model-form"/>
+    <file name="u3237-13.png" crc="3905709832" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:full-model-edit"/>
+    <file name="u3237-13-r.png" crc="350995148" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:full-model-edit"/>
+    <file name="u3237-13-m.png" crc="509882678" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:full-model-edit"/>
+    <file name="u3237-13-fs.png" crc="336816728" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:full-model-edit"/>
+    <file name="expand-collapse-controls.svg" crc="495279969" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:tables-expanded:top-graph-styling-partial:full-model-edit:filters:filters-expanded-selected:all-tables-expanded"/>
+    <file name="expand collapse controls_poster_.png" crc="326065399" ref="model-name-and-project-only"/>
+    <file name="upload cloud image-01.png" crc="419094323" seo="true" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model"/>
+    <file name="artwork-3.svg" crc="3863609902" ref="model-name-and-project-only:adding-model-description:adding-model-tags:uploading-data-model:full-model-expanded:full-model-edit:all-tables-expanded"/>
+    <file name="artwork 3_poster_.png" crc="4188518733" ref="model-name-and-project-only"/>
+    <file name="u4320-17.png" crc="15890867" ref="adding-model-description"/>
+    <file name="u4320-17-r.png" crc="4194582223" ref="adding-model-description"/>
+    <file name="u4320-17-m.png" crc="118995871" ref="adding-model-description"/>
+    <file name="u4320-17-fs.png" crc="4141538017" ref="adding-model-description"/>
+    <file name="u4504-17.png" crc="15890867" ref="adding-model-tags"/>
+    <file name="u4504-17-r.png" crc="4194582223" ref="adding-model-tags"/>
+    <file name="u4504-17-m.png" crc="118995871" ref="adding-model-tags"/>
+    <file name="u4504-17-fs.png" crc="4141538017" ref="adding-model-tags"/>
+    <file name="screen shot 2016-03-23 at 31204 pm.png" crc="37239653" seo="true" ref="uploading-data-model"/>
+    <file name="java icon-02.png" crc="340659616" seo="true" ref="full-model-expanded:full-model-edit:all-tables-expanded"/>
+    <file name="pasted-svg-771x151.svg" crc="11595731" ref="full-model-expanded:full-model-edit:all-tables-expanded"/>
+    <file name="pasted svg 771x151_poster_.png" crc="4057778587" ref="full-model-expanded"/>
+    <file name="u6337-13.png" crc="3905709832" ref="tables-expanded:top-graph-styling-partial:all-tables-expanded"/>
+    <file name="u6337-13-r.png" crc="350995148" ref="tables-expanded:top-graph-styling-partial:all-tables-expanded"/>
+    <file name="u6337-13-m.png" crc="509882678" ref="tables-expanded:top-graph-styling-partial:all-tables-expanded"/>
+    <file name="u6337-13-fs.png" crc="336816728" ref="tables-expanded:top-graph-styling-partial:all-tables-expanded"/>
+    <file name="elephant-01-01-crop-u8116.png" crc="315144078" ref="top-graph-styling-partial"/>
+    <file name="screen shot 2016-03-25 at 94258 am-u8205.png" crc="4247265005" ref="top-graph-styling-partial"/>
+    <file name="pasted-svg-771x1512.svg" crc="3874892810" ref="top-graph-styling-partial:top-graph-styling"/>
+    <file name="pasted svg 771x151_poster_2.png" crc="302475089" ref="top-graph-styling-partial"/>
+    <file name="pasted-svg-378584x378.svg" crc="3897122110" ref="top-graph-styling-partial:top-graph-styling"/>
+    <file name="pasted svg 378584x378_poster_.png" crc="151223161" ref="top-graph-styling-partial"/>
+    <file name="elephant-01-01-crop-u9090.png" crc="315144078" ref="top-graph-styling"/>
+    <file name="misc images for kamanja styling demo_ring legend outter.png" crc="4125203897" seo="true" ref="top-graph-styling"/>
+    <file name="misc images for kamanja styling demo_ring legend inner.png" crc="25055629" seo="true" ref="top-graph-styling"/>
+    <file name="u10118-13.png" crc="3905709832" ref="filters"/>
+    <file name="u10118-13-r.png" crc="350995148" ref="filters"/>
+    <file name="u10118-13-m.png" crc="509882678" ref="filters"/>
+    <file name="u10118-13-fs.png" crc="336816728" ref="filters"/>
+    <file name="u10525-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10553-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10652-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10718-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10778-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10796-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10871-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10532-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10562-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10649-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10709-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10790-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10799-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10883-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10574-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10643-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10715-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10787-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10802-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10877-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10580-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10646-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10712-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10781-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10814-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10880-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10592-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10655-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10724-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10823-4.png" crc="4127825606" ref="filters"/>
+    <file name="u10874-4.png" crc="4127825606" ref="filters"/>
+    <file name="u11055-13.png" crc="3905709832" ref="filters-expanded-selected"/>
+    <file name="u11055-13-r.png" crc="350995148" ref="filters-expanded-selected"/>
+    <file name="u11055-13-m.png" crc="509882678" ref="filters-expanded-selected"/>
+    <file name="u11055-13-fs.png" crc="336816728" ref="filters-expanded-selected"/>
+    <file name="u11176-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11167-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11130-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11156-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11170-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11166-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11153-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11147-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11144-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11139-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11143-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11131-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11115-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11155-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11109-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11149-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11107-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11146-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11132-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11161-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11159-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11108-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11141-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11137-4.png" crc="3917528219" ref="filters-expanded-selected"/>
+    <file name="u11127-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11158-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11164-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11173-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11151-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11169-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u11150-4.png" crc="4127825606" ref="filters-expanded-selected"/>
+    <file name="u14983-4.png" crc="4229468689" ref="all-tables-expanded"/>
+    <file name="u14850-4.png" crc="4141431682" ref="all-tables-expanded"/>
+  </folder>
+  <file name="index.html" crc="3790239709" seo="true" mt="1459187426887" redirect="true"/>
+  <file name="add-new-model-form.html" crc="4009111733" seo="true" mt="1459187426887" redirect="true"/>
+  <file name="model-name-and-project-only.html" crc="3942656294" seo="true" mt="1459187023252" redirect="true"/>
+  <file name="adding-model-description.html" crc="228522689" seo="true" mt="1459187023252" redirect="true"/>
+  <file name="adding-model-tags.html" crc="3906203921" seo="true" mt="1459187023252" redirect="true"/>
+  <file name="uploading-data-model.html" crc="4083178558" seo="true" mt="1459187023252" redirect="true"/>
+  <file name="full-model-expanded.html" crc="3839456169" seo="true" mt="1459187023252" redirect="true"/>
+  <file name="tables-expanded.html" crc="4152758098" seo="true" mt="1459187023250" redirect="true"/>
+  <file name="top-graph-styling-partial.html" crc="290962105" seo="true" mt="1459187023250" redirect="true"/>
+  <file name="top-graph-styling.html" crc="3912330423" seo="true" mt="1459186801072" redirect="true"/>
+  <file name="full-model-edit.html" crc="3847643446" seo="true" mt="1459187023252" redirect="true"/>
+  <file name="filters.html" crc="3933732397" seo="true" mt="1459187023245" redirect="true"/>
+  <file name="filters-expanded-selected.html" crc="3759179850" seo="true" mt="1459187023247" redirect="true"/>
+  <file name="all-tables-expanded.html" crc="3966111672" seo="true" mt="1459187459450" redirect="true"/>
+  <file name="links.html" crc="128919519" seo="true" mt="1459361509636" redirect="true"/>
+  <site/>
+  <renditions>
+    <rendition device="desktop">
+      <page name="Home" filename="index.html" muse_href="page:U93" master="U72">
+        <breakpoint uid="U83" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <masterPage name="A-Master" master="U62" uid="U72">
+        <breakpoint uid="U73" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <masterPage name="None" master="null" uid="U62">
+        <breakpoint uid="U63" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="add new model form" filename="add-new-model-form.html" muse_href="page:U2336" master="U72">
+        <breakpoint uid="U2224" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="model name and project only" filename="model-name-and-project-only.html" muse_href="page:U3478" master="U2825">
+        <breakpoint uid="U3360" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <masterPage name="A-Master copy" master="U62" uid="U2825">
+        <breakpoint uid="U2879" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="adding model description" filename="adding-model-description.html" muse_href="page:U4307" master="U2825">
+        <breakpoint uid="U4206" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="adding model tags" filename="adding-model-tags.html" muse_href="page:U4527" master="U2825">
+        <breakpoint uid="U4380" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="uploading data model" filename="uploading-data-model.html" muse_href="page:U4660" master="U2825">
+        <breakpoint uid="U4559" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="Full Model Expanded" filename="full-model-expanded.html" muse_href="page:U5280" master="U2825">
+        <breakpoint uid="U5144" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="tables expanded" filename="tables-expanded.html" muse_href="page:U6538" master="U5864">
+        <breakpoint uid="U6384" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <masterPage name="no table items" master="U62" uid="U5864">
+        <breakpoint uid="U6012" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="top graph styling partial" filename="top-graph-styling-partial.html" muse_href="page:U7866" master="U5864">
+        <breakpoint uid="U7724" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="top graph styling" filename="top-graph-styling.html" muse_href="page:U9088" master="U8767">
+        <breakpoint uid="U8928" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <masterPage name="B-Master" master="U62" uid="U8767">
+        <breakpoint uid="U8768" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="full model edit" filename="full-model-edit.html" muse_href="page:U9436" master="U2825">
+        <breakpoint uid="U9276" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="Filters" filename="filters.html" muse_href="page:U10390" master="U9706">
+        <breakpoint uid="U10230" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <masterPage name="Filters expanded" master="U62" uid="U9706">
+        <breakpoint uid="U9763" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="filters expanded selected" filename="filters-expanded-selected.html" muse_href="page:U11752" master="U10916">
+        <breakpoint uid="U11586" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <masterPage name="Filters expanded and selected" master="U62" uid="U10916">
+        <breakpoint uid="U11182" maxwidth="1280" minwidth="0" squishy="true"/>
+      </masterPage>
+      <page name="all tables expanded" filename="all-tables-expanded.html" muse_href="page:U11920" master="U5864">
+        <breakpoint uid="U11754" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+      <page name="links" filename="links.html" muse_href="page:U15195" master="U8767">
+        <breakpoint uid="U14993" maxwidth="1280" minwidth="0" squishy="true"/>
+      </page>
+    </rendition>
+  </renditions>
+</manifest>

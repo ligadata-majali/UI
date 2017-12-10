@@ -1,0 +1,399 @@
+<section class="modelsSection">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav-models nav nav-tabs">
+                <li id="liAddNewModel">
+                    <!--<button class="btn" id="addNewModel" ng-click="openAddNewModelModal()">ADD NEW MODEL</button>-->
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="addNewModel" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                            ACTIONS
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="addNewModel">
+                            <li ng-click="openAddNewAdapterMessageModal()">
+                                Add Adapter Message Binding
+                            </li>
+                            <li ng-click="openAddNewMessageModal()">
+                                Add Message
+                            </li>
+                            <li ng-click="openAddNewModelModal()">
+                                Add Model
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li id="toggleKamanjaStatus">
+                    <input type="checkbox" ng-model="kamanjaStatus" ng-change="kamanjaStatusChange()" data-on="START"
+                           data-off="STOP" toggle-checkbox>
+                </li>
+                <li style="width: 72%; padding-top: 8px;">
+                    <table width="100%">
+                        <tr>
+                            <td><input type="text" class="searchBox" ng-model="filterTable.searchBox"
+                                       placeholder="search model"/></td>
+                            <td><img src="img/search-icon.svg" alt=""
+                                     data-mu-svgfallback="images/search%20icon_poster_.png" width="29"
+                                     height="30"></td>
+                        </tr>
+                    </table>
+                </li>
+                <li id="liFilters" data-toggle="tab" ng-class="{activeFilter: !isFilterShown}" ng-click="showFilters()">
+                    <a id="hlFilter" class="filterLink" href="javascript:void(0)">FILTER ({{NoSelectedFilters}})</a>
+                </li>
+                <li
+                        ng-click="openConfigModal()">
+                    <a class="configLink" href="javascript:void(0)"><span
+                            class="glyphicon glyphicon-cog"></span></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="dvConfiguration" class=" collapse">
+                </div>
+                <div id="dvFilters" class=" collapse">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="filtersTitle">ACTIVITY</div>
+                            <div class="input checkbox">
+                                <input id="chkActive" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.activity.active" type="checkbox">
+                                <label for="chkActive">Active</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkInactive" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.activity.inactive" type="checkbox">
+                                <label for="chkInactive">Inactive</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="filtersTitle">ACTIVATED</div>
+                            <div class="input checkbox">
+                                <input id="chkLastHour" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.activated.lastHour" type="checkbox">
+                                <label for="chkLastHour">Last Hour</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkLast24Hours" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.activated.last24Hours" type="checkbox">
+                                <label for="chkLast24Hours">Last 24 Hours</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkLast7Days" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.activated.last7Days" type="checkbox">
+                                <label for="chkLast7Days">Last 7 Days</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkLast30Days" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.activated.last30Days" type="checkbox">
+                                <label for="chkLast30Days">Last 30 Days</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkPlus30Days" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.activated.plus30Days" type="checkbox">
+                                <label for="chkPlus30Days">Last 30+ Days</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="filtersTitle">RECORDS IN</div>
+                            <div class="input checkbox">
+                                <input id="chkHighest" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsIn.highest" type="checkbox">
+                                <label for="chkHighest">Highest</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkHigh" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsIn.high" type="checkbox">
+                                <label for="chkHigh">High</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkMid" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsIn.mid" type="checkbox">
+                                <label for="chkMid">Mid</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkLow" ng-model="filterTable.recordsIn.low"
+                                       ng-true-value="true" ng-false-value="false" type="checkbox">
+                                <label for="chkLow">Low</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkLowest" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsIn.lowest" type="checkbox"/>
+                                <label for="chkLowest">Lowest</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="filtersTitle">% OF RECORDS OUT</div>
+                            <div class="input checkbox">
+                                <input id="chkOut20" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsOut.rec20" type="checkbox">
+                                <label for="chkOut20">0-20%</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkOut40" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsOut.rec40" type="checkbox">
+                                <label for="chkOut40">21-40%</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkOut60" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsOut.rec60" type="checkbox">
+                                <label for="chkOut60">41-60%</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkOut80" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsOut.rec80" type="checkbox">
+                                <label for="chkOut80">61-80%</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkOut100" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.recordsOut.rec100" type="checkbox">
+                                <label for="chkOut100">81-100%</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="filtersTitle">LANGUAGE</div>
+                            <div class="input checkbox">
+                                <input id="chkJava" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.language.Java" type="checkbox">
+                                <label for="chkJava">Java</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkScala" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.language.Scala" type="checkbox">
+                                <label for="chkScala">Scala</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkPmml" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.language.Pmml" type="checkbox">
+                                <label for="chkPmml">PMML</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input id="chkPython" ng-true-value="true" ng-false-value="false"
+                                       ng-model="filterTable.language.Python" type="checkbox">
+                                <label for="chkPython">PYTHON</label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="filtersTitle">CUSTOM TAGS</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input checkbox">
+                                        <input id="chkTag1" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag1" type="checkbox">
+                                        <label for="chkTag1">Kamanja</label>
+                                    </div>
+                                    <div class="input checkbox">
+                                        <input id="chkTag2" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag2" type="checkbox">
+                                        <label for="chkTag2">HBase</label>
+                                    </div>
+                                    <div class="input checkbox">
+                                        <input id="chkTag3" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag3" type="checkbox">
+                                        <label for="chkTag3">BankD</label>
+                                    </div>
+                                    <div class="input checkbox">
+                                        <input id="chkTag4" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag4" type="checkbox">
+                                        <label for="chkTag4">R</label>
+                                    </div>
+                                    <div class="input checkbox">
+                                        <input id="chkTag5" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag5" type="checkbox">
+                                        <label for="chkTag5">csv</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input checkbox">
+                                        <input id="chkTag6" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag6" type="checkbox">
+                                        <label for="chkTag6">Ahmad</label>
+                                    </div>
+                                    <div class="input checkbox">
+                                        <input id="chkTag7" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag7" type="checkbox">
+                                        <label for="chkTag7">Greg</label>
+                                    </div>
+                                    <div class="input checkbox">
+                                        <input id="chkTag8" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag8" type="checkbox">
+                                        <label for="chkTag8">Yousef</label>
+                                    </div>
+                                    <div class="input checkbox">
+                                        <input id="chkTag9" ng-true-value="true" ng-false-value="false"
+                                               ng-model="filterTable.tags.tag9" type="checkbox">
+                                        <label for="chkTag9">Bill</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- end of custom tags 1 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table tblModelsList">
+                <thead>
+                <tr class="tableHeader">
+                    <td style="color:#009999; width: 15%;cursor:pointer;" ng-click="updateFilter('name');">
+                        <span>MODEL</span>
+                        <span ng-show="modelsFilter==='name' && modelsFilterStatus === 'desc'"
+                              class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        <span ng-show="modelsFilter==='name' && modelsFilterStatus === 'asc'"
+                              class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></td>
+                    <td style="width: 15%;cursor:pointer;" ng-click="updateFilter('projectName');"><span>PROJECT</span>
+                        <span ng-show="modelsFilter==='projectName' && modelsFilterStatus === 'desc'"
+                              class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        <span ng-show="modelsFilter==='projectName' && modelsFilterStatus === 'asc'"
+                              class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></td>
+                    </td>
+                    <td style="width: 10%;cursor:pointer;" ng-click="updateFilter('status');"><span>STATUS</span>
+                        <span ng-show="modelsFilter==='status' && modelsFilterStatus === 'desc'"
+                              class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        <span ng-show="modelsFilter==='status' && modelsFilterStatus === 'asc'"
+                              class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></td>
+                    </td>
+                    <td style="width: 10%;cursor:pointer;" ng-click="updateFilter('age');"><span>AGE</span>
+                        <span ng-show="modelsFilter==='age' && modelsFilterStatus === 'desc'"
+                              class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        <span ng-show="modelsFilter==='age' && modelsFilterStatus === 'asc'"
+                              class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></td>
+                    </td>
+                    <td style="width: 20%">TAGS
+                        <span ng-show="modelsFilter==='tags' && modelsFilterStatus === 'desc'"
+                              class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        <span ng-show="modelsFilter==='tags' && modelsFilterStatus === 'asc'"
+                              class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></td>
+                    </td>
+                    <td style="width: 15%">
+                        VOLUME
+                    </td>
+                    <td style="width: 15%" align="left">
+                       <span><i ng-class="{expandButton: !isExpanded}" ng-click="collapseAll(this)"
+                                class="actionButtons glyphicon glyphicon-align-justify"></i></span>
+                        <span><i ng-class="{expandButton: isExpanded}" ng-click="expandAll(this)"
+                                 class="actionButtons glyphicon glyphicon-menu-hamburger"></i></span>
+
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat-start="item in models
+                |  ModelsFilter: filterTable
+                | orderBy: modelsFilter: modelsFilterStatus === 'desc'
+                | startFrom:(currentPage -1)*numberOfModelsPerPage
+                | limitTo:numberOfModelsPerPage "
+                    class="tableRow"
+                    ng-class-odd="'oddRow'" ng-class="{'lastRow':$last}">
+                    <td ng-class="{'open':item.open}">{{item.displayName}}</td>
+                    <td>{{item.projectName}}</td>
+                    <td>{{item.status}}</td>
+                    <td>{{FormatAge(item.age)}}</td>
+                    <td>{{item.tags}}</td>
+                    <td>
+                        <bar-chart2
+                                id="dv{{item.projectName | removeSpaces}}{{item.id}}"
+                                data="modelArrays[item.id]"
+                                height="15" width="128"></bar-chart2>
+                    </td>
+                    <td style="float: right;padding-right: 30px;" align="right">
+                        <a class="accordion-delete" href="javascript:void(0);" ng-click="deleteModel(item)">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                        <a data-toggle="collapse" class="accordion-toggle" ng-show="!item.open"
+                           ng-click="openModel(item)"
+                           data-target="#dvInner{{item.name}}{{item.projectName}}"
+                           href="javascript:void(0);">
+                           <span><img src="img/angel.svg" width="12" height="18"/>
+                           </span></a>
+                        <div class="closeBoxOuterWrapper"
+                             data-toggle="collapse"
+                             data-target="#dvInner{{item.name}}{{item.projectName}}"
+                             ng-show="item.open"
+                             ng-click="collapseModel(item)">
+                            <div class="closeBoxInnerWrapper">
+                                <img src="img/artwork-3.svg" width="11" height="22"
+                                     data-mu-svgfallback="img/artwork%203_poster_.png">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr ng-repeat-end class="innerDiv accordian-body " ng-if="item.open"
+                    id="dvInner{{item.name}}{{item.projectName}}">
+                    <td colspan="7" ng-class="{'editable':item.isEditable}" class="hiddenRow">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="fileName"><img ng-src="{{languageImage(item)}}" width="32" height="38"
+                                                           data-muse-src="{{languageImage(item)}}">
+                                    {{item.displayName}} <!--.{{item.language?item.language:'scala'}} -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <ul class="modelTab nav nav-tabs tabs-left">
+                                    <li class="active">
+                                        <a data-target="#modelOverview{{item.id}}"
+                                           data-toggle="tab">ACTIVITY OVERVIEW</a>
+                                    </li>
+                                    <li>
+                                        <a data-target="#modelDescription{{item.id}}"
+                                           class="descriptionLink"
+                                           data-toggle="tab">DESCRIPTION DETAILS</a>
+                                    </li>
+                                    <li>
+                                        <a ng-click="setCurrentTab(3)" class="alertsLink" data-target="#modelAlerts{{item.id}}"
+                                           data-toggle="tab">ALERTS</a>
+                                    </li>
+                                    <li ng-show="item.name == 'blacklistipaddr' || item.name == 'outsidenormalbusinesshours'">
+                                        <a ng-click="setCurrentTab(4)" class="thresholdLink" data-target="#modelThreshold{{item.id}}"
+                                           data-toggle="tab">THRESHOLD</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-10 chartDiv">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="modelOverview{{item.id}}">
+                                        <div model-chart item="item" model-arrays="modelArrays"></div>
+                                    </div>
+                                    <div class="tab-pane" id="modelDescription{{item.id}}">
+                                        <div ng-show="!item.isEditable" model-description item="item"></div>
+                                        <div ng-show="item.isEditable" edit-model item="item"
+                                             update-model-info="updateModelInfo" cancel-update="cancel"></div>
+                                    </div>
+                                    <div class="tab-pane" id="modelAlerts{{item.id}}">
+                                        <div alerts item="item"></div>
+                                    </div>
+                                    <div class="tab-pane" id="modelThreshold{{item.id}}">
+                                        <div class="thresholdTab">
+                                            <div ng-show="!item.isEditableThreshold" start-hour="startHour"
+                                                 end-hour="endHour" item="item" listips="blackIPs"
+                                                 view-threshold-alerts></div>
+                                            <div ng-show="item.isEditableThreshold" item="item" listips="blackIPs"
+                                                 update-black-list-ips="updateBlackList" start-hour="startHour"
+                                                 end-hour="endHour" update-thresholdtime="updateThresholdTime"
+                                                 edit-threshold-alerts></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-12" style="margin-bottom: 50px;">
+            <div class="pagerNumbers col-md-offset-6">
+                <span ng-repeat="num in pagesArr()" ng-click="setPage(num)" ng-class="{'active':num===currentPage}">{{num}}</span>
+                Showing
+                <select
+                        ng-model="numberOfModelsPerPage"
+                        ng-options="num for num in pageSizeOptions"></select> items per page
+            </div>
+        </div>
+    </div>
+</section>

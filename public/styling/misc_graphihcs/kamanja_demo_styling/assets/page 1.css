@@ -1,0 +1,36 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    background-image:url("img/Kamanja%20V7%20top%20graph_activated%20last%207%20days.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 50% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#outterwrapper {
+    float: none;
+    height: 997px;
+    margin: 0px auto;
+    clear: none;
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(255, 173, 173, 0.34902);
+}
+
+#box {
+    float: none;
+    height: 509px;
+    margin-left: auto;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    background-color: rgba(10, 0, 255, 0.65098);
+    margin-right: auto;
+}
+

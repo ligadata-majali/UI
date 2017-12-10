@@ -1,0 +1,44 @@
+<div class="threshold ">
+    <div ng-show="item.name == 'blacklistipaddr'" class="editBlackListIPs">
+        <div style="color:#ff9900;">BLACK LISTED IP's</div>
+        <hr>
+        <table class="table tblBlacklist">
+            <tr ng-repeat="ip in listips track by $index">
+                <td><input type="text" ng-model="listips[$index]" class="form-control" />
+                    <span class="glyphicon glyphicon-remove-sign" ng-click="listips[$index] = ''" aria-hidden="true"></span>
+                </td>
+            </tr>
+        </table>
+        <div ng-click="addIPadress()" style="border-bottom:1px solid #02e2e2; cursor:pointer; color:#02e2e2; width:85px; font-size:16px;">ADD NEW</div>
+    </div>
+    <div ng-show="item.name == 'outsidenormalbusinesshours'" class="OutsideHours">
+        <div>
+            <h5 class="outSideTitle">BUSINESS HOUR START TIME</h5>
+            <input type="text" class="form-control" ng-model="startHour"/>
+        </div>
+        <br />
+        <div>
+            <h5 class="outSideTitle">BUSINESS HOUR END TIME</h5>
+            <input type="text" class="form-control" ng-model="endHour"/>
+        </div>
+    </div>
+</div>
+<div ng-show="item.name == 'blacklistipaddr'" class="thresholdDivActionButtons">
+    <button ng-click="updateIPs()"
+            style="background-color: #02e2e2;color:white; margin-left:15px;"
+            class="thresholdActionButtons pull-right">SAVE
+    </button>
+    <button ng-click="item.isEditableThreshold = false;"
+            class="thresholdActionButtons pull-right">CANCEL
+    </button>
+
+</div>
+<div ng-show="item.name == 'outsidenormalbusinesshours'" class="thresholdActionDiv">
+    <button ng-click="updateThresholdTime()"
+            style="background-color: #02e2e2;color:white; margin-left:15px;"
+            class="thresholdActionButtons pull-right">SAVE
+    </button>
+    <button ng-click="item.isEditableThreshold = false;"
+            class="thresholdActionButtons pull-right">CANCEL
+    </button>
+</div>

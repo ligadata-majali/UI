@@ -1,0 +1,1750 @@
+@charset "UTF-8";
+@import url("../bootstrap/dist/css/bootstrap.min.css");
+@import url("../inputs/dist/css/bootstrap-inputs.css");
+body {
+  font-family: '__Roboto_5' !important; }
+
+.fullWidth {
+  padding: 0;
+  width: 100%;
+  min-width: 1280px; }
+
+#outter_wrapper {
+  float: none;
+  height: 2255px;
+  margin: 0px auto;
+  clear: none;
+  width: 100%;
+  min-height: 0px;
+  min-width: 0px;
+  background-color: #f6f6f4; }
+
+#header {
+  height: 58px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.86275);
+  border-bottom-color: #c2c2c2;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top-color: cyan;
+  border-top-width: 3px;
+  border-top-style: solid;
+  padding: 1px 0 0 5px; }
+  #header .row {
+    margin: 0 auto; }
+    @media (min-width: 1280px) {
+      #header .row {
+        width: 1280px; } }
+    #header .row .headerTitle {
+      font-family: "__Roboto_5";
+      font-weight: 700;
+      color: white;
+      font-size: 36px; }
+    #header .row .headerDescription {
+      color: #7F7F7F;
+      line-height: 22px;
+      font-size: 18px; }
+    #header .row .headerCounterWrapper {
+      width: 440px;
+      font-family: "__Roboto Condensed_5";
+      text-align: right; }
+      #header .row .headerCounterWrapper .upperRightVolume {
+        color: #7F7F7F;
+        font-size: 18px;
+        padding-top: 6px;
+        line-height: 18px; }
+      #header .row .headerCounterWrapper .headerCounter {
+        padding: 2px 7px 0 0;
+        color: #fcfcfc;
+        font-size: 43px;
+        line-height: 45px; }
+        #header .row .headerCounterWrapper .headerCounter .headerCounterSlash {
+          color: #00ffff; }
+        #header .row .headerCounterWrapper .headerCounter .headerCounterSec {
+          font-size: 36px; }
+
+#image {
+  float: left;
+  width: 166px;
+  max-width: 100%;
+  height: auto;
+  clear: none;
+  color: black;
+  margin: 0px; }
+
+/* Majali Added CSS */
+.modelHeaderTitle {
+  background-color: transparent;
+  line-height: 53px;
+  font-size: 44px;
+  letter-spacing: -1px;
+  font-family: '__Roboto Condensed_5';
+  font-weight: 400;
+  z-index: 351;
+  width: 123px;
+  min-height: 41px;
+  color: black; }
+
+.chartsSection {
+  overflow: scroll; }
+
+body {
+  font-family: '__Roboto_5';
+  font-size: 13px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: '__Roboto_5';
+  font-weight: 700; }
+
+.modelsSection h1 {
+  font-size: 50px; }
+
+.nav-models {
+  border-bottom: none;
+  margin-bottom: 22px;
+  margin-top: 4px; }
+
+.activeFilter > a {
+  border: none !important;
+  border-bottom-color: transparent; }
+
+#liAddNewModel {
+  padding-left: 0;
+  position: relative;
+  bottom: 5px; }
+  #liAddNewModel #addNewModel {
+    z-index: 355;
+    height: 41px;
+    margin-top: 10px;
+    background-color: white;
+    padding: 4px 20px 3px;
+    color: #009999;
+    font-weight: 600;
+    position: relative;
+    font-size: 14px;
+    right: 15px;
+    cursor: pointer; }
+  #liAddNewModel li {
+    width: 225px;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd; }
+    #liAddNewModel li:hover {
+      background-color: #009999;
+      color: white; }
+    #liAddNewModel li:last-of-type {
+      border-bottom: 0; }
+
+.modal-backdrop.in {
+  opacity: .8; }
+
+.confirmationModal .modal-dialog, .addNewModelModal .modal-dialog, .addNewMessageModal .modal-dialog, .addNewAdapterMessageModal .modal-dialog, .configModal .modal-dialog {
+  margin-top: 60px;
+  width: 522px; }
+  .confirmationModal .modal-dialog .modal-content, .addNewModelModal .modal-dialog .modal-content, .addNewMessageModal .modal-dialog .modal-content, .addNewAdapterMessageModal .modal-dialog .modal-content, .configModal .modal-dialog .modal-content {
+    height: 550px;
+    border-radius: 4px; }
+    .confirmationModal .modal-dialog .modal-content .addModelHeader, .addNewModelModal .modal-dialog .modal-content .addModelHeader, .addNewMessageModal .modal-dialog .modal-content .addModelHeader, .addNewAdapterMessageModal .modal-dialog .modal-content .addModelHeader, .configModal .modal-dialog .modal-content .addModelHeader {
+      padding: 34px 0 0 0; }
+    .confirmationModal .modal-dialog .modal-content .modal-title, .addNewModelModal .modal-dialog .modal-content .modal-title, .addNewMessageModal .modal-dialog .modal-content .modal-title, .addNewAdapterMessageModal .modal-dialog .modal-content .modal-title, .configModal .modal-dialog .modal-content .modal-title {
+      font-size: 28px;
+      font-weight: 300;
+      color: #484848; }
+    .confirmationModal .modal-dialog .modal-content .modal-config-title, .addNewModelModal .modal-dialog .modal-content .modal-config-title, .addNewMessageModal .modal-dialog .modal-content .modal-config-title, .addNewAdapterMessageModal .modal-dialog .modal-content .modal-config-title, .configModal .modal-dialog .modal-content .modal-config-title {
+      color: #31DADA; }
+    .confirmationModal .modal-dialog .modal-content .modal-sub-title, .addNewModelModal .modal-dialog .modal-content .modal-sub-title, .addNewMessageModal .modal-dialog .modal-content .modal-sub-title, .addNewAdapterMessageModal .modal-dialog .modal-content .modal-sub-title, .configModal .modal-dialog .modal-content .modal-sub-title {
+      font-size: 20px;
+      font-weight: 300;
+      color: #009999;
+      padding: 0 0 15px 0; }
+    .confirmationModal .modal-dialog .modal-content .closeButton, .addNewModelModal .modal-dialog .modal-content .closeButton, .addNewMessageModal .modal-dialog .modal-content .closeButton, .addNewAdapterMessageModal .modal-dialog .modal-content .closeButton, .configModal .modal-dialog .modal-content .closeButton {
+      vertical-align: top;
+      display: block;
+      position: absolute;
+      top: -25px;
+      left: calc(100% + 6px);
+      cursor: pointer; }
+    .confirmationModal .modal-dialog .modal-content .modalControls, .addNewModelModal .modal-dialog .modal-content .modalControls, .addNewMessageModal .modal-dialog .modal-content .modalControls, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls, .configModal .modal-dialog .modal-content .modalControls {
+      margin: 0 auto;
+      height: 410px;
+      overflow-y: hidden; }
+      .confirmationModal .modal-dialog .modal-content .modalControls label, .addNewModelModal .modal-dialog .modal-content .modalControls label, .addNewMessageModal .modal-dialog .modal-content .modalControls label, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls label, .configModal .modal-dialog .modal-content .modalControls label {
+        color: #009999; }
+      .confirmationModal .modal-dialog .modal-content .modalControls label.configLabel, .addNewModelModal .modal-dialog .modal-content .modalControls label.configLabel, .addNewMessageModal .modal-dialog .modal-content .modalControls label.configLabel, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls label.configLabel, .configModal .modal-dialog .modal-content .modalControls label.configLabel {
+        color: black; }
+      .confirmationModal .modal-dialog .modal-content .modalControls input[type=text], .addNewModelModal .modal-dialog .modal-content .modalControls input[type=text], .addNewMessageModal .modal-dialog .modal-content .modalControls input[type=text], .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls input[type=text], .configModal .modal-dialog .modal-content .modalControls input[type=text] {
+        border-color: #ccc;
+        height: 44px; }
+        .confirmationModal .modal-dialog .modal-content .modalControls input[type=text]:hover, .confirmationModal .modal-dialog .modal-content .modalControls input[type=text]:focus, .addNewModelModal .modal-dialog .modal-content .modalControls input[type=text]:hover, .addNewModelModal .modal-dialog .modal-content .modalControls input[type=text]:focus, .addNewMessageModal .modal-dialog .modal-content .modalControls input[type=text]:hover, .addNewMessageModal .modal-dialog .modal-content .modalControls input[type=text]:focus, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls input[type=text]:hover, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls input[type=text]:focus, .configModal .modal-dialog .modal-content .modalControls input[type=text]:hover, .configModal .modal-dialog .modal-content .modalControls input[type=text]:focus {
+          border-color: #ccc;
+          outline: none;
+          -webkit-box-shadow: none !important;
+          -moz-box-shadow: none !important;
+          box-shadow: none !important; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .config, .confirmationModal .modal-dialog .modal-content .modalControls .message, .confirmationModal .modal-dialog .modal-content .modalControls .model, .addNewModelModal .modal-dialog .modal-content .modalControls .config, .addNewModelModal .modal-dialog .modal-content .modalControls .message, .addNewModelModal .modal-dialog .modal-content .modalControls .model, .addNewMessageModal .modal-dialog .modal-content .modalControls .config, .addNewMessageModal .modal-dialog .modal-content .modalControls .message, .addNewMessageModal .modal-dialog .modal-content .modalControls .model, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .config, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .message, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .model, .configModal .modal-dialog .modal-content .modalControls .config, .configModal .modal-dialog .modal-content .modalControls .message, .configModal .modal-dialog .modal-content .modalControls .model {
+        height: 410px;
+        display: block; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .config .inputs, .confirmationModal .modal-dialog .modal-content .modalControls .message .inputs, .confirmationModal .modal-dialog .modal-content .modalControls .model .inputs, .addNewModelModal .modal-dialog .modal-content .modalControls .config .inputs, .addNewModelModal .modal-dialog .modal-content .modalControls .message .inputs, .addNewModelModal .modal-dialog .modal-content .modalControls .model .inputs, .addNewMessageModal .modal-dialog .modal-content .modalControls .config .inputs, .addNewMessageModal .modal-dialog .modal-content .modalControls .message .inputs, .addNewMessageModal .modal-dialog .modal-content .modalControls .model .inputs, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .config .inputs, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .message .inputs, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .model .inputs, .configModal .modal-dialog .modal-content .modalControls .config .inputs, .configModal .modal-dialog .modal-content .modalControls .message .inputs, .configModal .modal-dialog .modal-content .modalControls .model .inputs {
+          display: block;
+          height: 267px;
+          padding-top: 30px; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .form-control.name, .addNewModelModal .modal-dialog .modal-content .modalControls .form-control.name, .addNewMessageModal .modal-dialog .modal-content .modalControls .form-control.name, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .form-control.name, .configModal .modal-dialog .modal-content .modalControls .form-control.name {
+        width: 387px;
+        height: 57px;
+        margin: 6px auto 0 auto;
+        min-height: 15px;
+        color: black;
+        font-family: '__Roboto_5';
+        font-style: normal;
+        font-weight: 400;
+        padding: 19px;
+        z-index: 434;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #009999;
+        background-color: #FFFFFF;
+        border-radius: 3px;
+        line-height: 14px; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn, .addNewModelModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn, .addNewMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn, .configModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn {
+        width: 387px;
+        height: 44px;
+        margin: 3px auto 0 auto;
+        min-height: 15px;
+        color: #AFAFAF;
+        font-family: '__Roboto_5';
+        font-style: normal;
+        font-weight: 400;
+        padding: 15px 19px 19px 19px;
+        z-index: 434;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #999999;
+        background-color: #FFFFFF;
+        border-radius: 0px;
+        line-height: 14px;
+        text-align: left;
+        position: relative;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn.thereIsProject, .addNewModelModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn.thereIsProject, .addNewMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn.thereIsProject, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn.thereIsProject, .configModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn.thereIsProject {
+          color: black; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .projectIdCaret, .addNewModelModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .projectIdCaret, .addNewMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .projectIdCaret, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .projectIdCaret, .configModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .projectIdCaret {
+          position: absolute;
+          left: 346px;
+          top: 14px; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .caret, .addNewModelModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .caret, .addNewMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .caret, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .caret, .configModal .modal-dialog .modal-content .modalControls .form-control.addModelDropDownBtn .caret {
+          float: right; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .drop-box, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box, .configModal .modal-dialog .modal-content .modalControls .drop-box {
+        background: #F8F8F8;
+        border: 1px solid #999999;
+        width: 387px;
+        height: 151px;
+        text-align: center;
+        padding-top: 3px;
+        margin: 0 auto;
+        position: relative; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .drop-box .fileName, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box .fileName, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box .fileName, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box .fileName, .configModal .modal-dialog .modal-content .modalControls .drop-box .fileName {
+          display: flex;
+          justify-content: center;
+          /* align horizontal */
+          align-items: center;
+          /* align vertical */
+          height: 100%; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .drop-box .removeLink, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box .removeLink, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box .removeLink, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box .removeLink, .configModal .modal-dialog .modal-content .modalControls .drop-box .removeLink {
+          position: absolute;
+          color: #009999;
+          cursor: pointer;
+          top: 80%;
+          left: 0;
+          width: 100%;
+          text-align: center; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .drop-box.dragover, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box.dragover, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box.dragover, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box.dragover, .configModal .modal-dialog .modal-content .modalControls .drop-box.dragover {
+          border: 5px dashed #999999; }
+        .confirmationModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription, .configModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription {
+          color: #AFAFAF;
+          animation: goSmaller1 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards; }
+          .confirmationModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription .browseLink, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription .browseLink, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription .browseLink, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription .browseLink, .configModal .modal-dialog .modal-content .modalControls .drop-box .ngfDragDescription .browseLink {
+            color: #009999;
+            cursor: pointer; }
+@keyframes goSmaller1 {
+  from {
+    font-size: 0px; }
+  to {
+    font-size: 13px; } }
+        .confirmationModal .modal-dialog .modal-content .modalControls .drop-box .fa-upload, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box .fa-upload, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box .fa-upload, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box .fa-upload, .configModal .modal-dialog .modal-content .modalControls .drop-box .fa-upload {
+          display: inline-block;
+          background-color: #009999;
+          color: white;
+          line-height: 36px;
+          animation: goBigger1 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards;
+          padding-bottom: 4px;
+          margin-top: 34px;
+          margin-bottom: 10px; }
+@keyframes goBigger1 {
+  from {
+    width: 74px;
+    height: 74px;
+    border-radius: 37px;
+    font-size: 43.16667px;
+    line-height: 74px; }
+  to {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 23.33333px;
+    line-height: 40px; } }
+        .confirmationModal .modal-dialog .modal-content .modalControls .drop-box:hover .ngfDragDescription, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box:hover .ngfDragDescription, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box:hover .ngfDragDescription, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box:hover .ngfDragDescription, .configModal .modal-dialog .modal-content .modalControls .drop-box:hover .ngfDragDescription {
+          animation: goSmaller 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards; }
+@keyframes goSmaller {
+  from {
+    font-size: 13px; }
+  to {
+    font-size: 0px; } }
+        .confirmationModal .modal-dialog .modal-content .modalControls .drop-box:hover .fa-upload, .addNewModelModal .modal-dialog .modal-content .modalControls .drop-box:hover .fa-upload, .addNewMessageModal .modal-dialog .modal-content .modalControls .drop-box:hover .fa-upload, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .drop-box:hover .fa-upload, .configModal .modal-dialog .modal-content .modalControls .drop-box:hover .fa-upload {
+          animation: goBigger 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards; }
+@keyframes goBigger {
+  from {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 23.33333px;
+    line-height: 40px; }
+  to {
+    width: 74px;
+    height: 74px;
+    border-radius: 37px;
+    font-size: 43.16667px;
+    line-height: 74px; } }
+      .confirmationModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns, .addNewModelModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns, .addNewMessageModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns, .configModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns {
+        border-radius: 0;
+        border-color: #999999;
+        border-top: 0;
+        margin-top: -7px;
+        padding-top: 22px;
+        width: 387px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-animation: fadein 0.7s;
+        /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 0.7s;
+        /* Firefox < 16 */
+        -ms-animation: fadein 0.7s;
+        /* Internet Explorer */
+        -o-animation: fadein 0.7s;
+        /* Opera < 12.1 */
+        animation: fadein 0.7s; }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+        .confirmationModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a, .addNewModelModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a, .addNewMessageModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a, .configModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a {
+          /*height: 62px;*/
+          width: 346px;
+          text-align: left;
+          margin: 0 auto;
+          /*padding-top: 20px;*/
+          font-size: 16px;
+          /*margin-bottom: 6px;*/ }
+          .confirmationModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a:hover, .addNewModelModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a:hover, .addNewMessageModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a:hover, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a:hover, .configModal .modal-dialog .modal-content .modalControls ul.addModelDropDowns li a:hover {
+            background: #009999;
+            color: white; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .btnAddModel, .addNewModelModal .modal-dialog .modal-content .modalControls .btnAddModel, .addNewMessageModal .modal-dialog .modal-content .modalControls .btnAddModel, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .btnAddModel, .configModal .modal-dialog .modal-content .modalControls .btnAddModel {
+        display: inline;
+        width: 150px;
+        height: 53px;
+        font-size: 15px;
+        font-weight: 700;
+        background-color: #009999;
+        color: white;
+        position: relative;
+        border: 0;
+        margin: 37px auto 0 auto; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .ng-hide-add-active, .addNewModelModal .modal-dialog .modal-content .modalControls .ng-hide-add-active, .addNewMessageModal .modal-dialog .modal-content .modalControls .ng-hide-add-active, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .ng-hide-add-active, .configModal .modal-dialog .modal-content .modalControls .ng-hide-add-active {
+        -webkit-transition: 0.3s linear all;
+        transition: 0.3s linear all; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .ng-hide-remove-active, .addNewModelModal .modal-dialog .modal-content .modalControls .ng-hide-remove-active, .addNewMessageModal .modal-dialog .modal-content .modalControls .ng-hide-remove-active, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .ng-hide-remove-active, .configModal .modal-dialog .modal-content .modalControls .ng-hide-remove-active {
+        -webkit-transition: 0.3s linear all;
+        transition: 0.3s linear all;
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.3s; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .ng-hide, .addNewModelModal .modal-dialog .modal-content .modalControls .ng-hide, .addNewMessageModal .modal-dialog .modal-content .modalControls .ng-hide, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .ng-hide, .configModal .modal-dialog .modal-content .modalControls .ng-hide {
+        opacity: 0; }
+      .confirmationModal .modal-dialog .modal-content .modalControls .ng-submitted .ng-invalid, .addNewModelModal .modal-dialog .modal-content .modalControls .ng-submitted .ng-invalid, .addNewMessageModal .modal-dialog .modal-content .modalControls .ng-submitted .ng-invalid, .addNewAdapterMessageModal .modal-dialog .modal-content .modalControls .ng-submitted .ng-invalid, .configModal .modal-dialog .modal-content .modalControls .ng-submitted .ng-invalid {
+        border-color: red !important; }
+
+.confirmationModal .modal-dialog .modal-content {
+  height: 490px; }
+
+.spinner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-transition: all 360ms cubic-bezier(0.52, -0.24, 0.46, 1.27);
+  -moz-transition: all 360ms cubic-bezier(0.52, -0.24, 0.46, 1.27);
+  -o-transition: all 360ms cubic-bezier(0.52, -0.24, 0.46, 1.27);
+  transition: all 360ms cubic-bezier(0.52, -0.24, 0.46, 1.27);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0.7;
+  background: #fff;
+  z-index: 10000;
+  position: absolute; }
+  .spinner .whirl {
+    position: absolute;
+    top: 40%;
+    right: 50%; }
+    .spinner .whirl:before {
+      background-color: inherit !important; }
+
+.searchBox {
+  border: none;
+  padding-top: 15px;
+  margin-right: 7px;
+  width: 340px;
+  float: right;
+  text-align: right;
+  position: relative;
+  bottom: 4px;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; }
+
+.searchBox:placeholder-shown {
+  font-size: 14px;
+  font-style: italic;
+  color: #c4c4c4; }
+
+.searchBox:hover,
+.searchBox:focus {
+  color: #4f4f4f;
+  font-size: 14px;
+  text-align: left;
+  border-bottom: 1px solid; }
+
+#dvFilters, #dvConfiguration {
+  padding-top: 10px; }
+  #dvFilters .checkbox, #dvConfiguration .checkbox {
+    color: #333333 !important;
+    font-family: '__Roboto_5';
+    font-weight: 400; }
+
+#dvConfiguration button {
+  margin: 20px; }
+
+.oddRow {
+  background-color: #EEEDEA; }
+
+.expandButton {
+  color: #009999;
+  border: 1px solid #009999; }
+
+.downArrow {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+.filterLink, .configLink {
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: '__Roboto_5';
+  font-weight: 700;
+  height: 53px;
+  left: 20px;
+  padding-top: 16px !important;
+  color: #009999 !important; }
+  .filterLink > a:hover, .configLink > a:hover {
+    color: #009999 !important;
+    background-color: white !important;
+    cursor: pointer; }
+
+.configLink {
+  margin-top: -4px; }
+  .configLink .glyphicon {
+    font-size: 22px;
+    vertical-align: middle; }
+
+.nav > li > a.configLink:focus, .nav > li > a.configLink:hover {
+  background-color: white !important;
+  border-color: white !important;
+  outline: none; }
+
+li#liFilters > a:hover, li#liConfiguration > a:hover {
+  background-color: white; }
+
+.titleButton {
+  padding-top: 15px; }
+
+.StatusesNumbers {
+  font-family: '__Roboto_5';
+  /*"Montserrat", serif, Helvetica, Arial, sans-serif;*/
+  text-transform: uppercase;
+  color: #660066;
+  font-weight: 400; }
+
+.StatusesNumbers .text {
+  border-left-color: black;
+  border-left-width: 1px;
+  border-left-style: solid; }
+
+.StatusesNumbers .active {
+  font-weight: 700; }
+
+.dateFilters > li {
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.dateFilters > li > div > span {
+  position: relative;
+  top: 15px; }
+
+li.quadroTabs {
+  width: 24%; }
+
+.addModelHeader {
+  padding-top: 40px;
+  text-align: center;
+  border: none !important; }
+
+.addModelHeader p {
+  font-size: 19px; }
+
+.tbContent {
+  padding-top: 50px; }
+
+.newModelForm {
+  background-color: black; }
+
+.newModelForm h1 {
+  color: white;
+  font-size: 30px; }
+
+.newModelForm input {
+  background-color: black;
+  color: white; }
+
+.newModelForm p {
+  color: #C8C8C8; }
+
+.hiddenRow {
+  border: none !important; }
+
+.modelsSection {
+  margin-top: 10px;
+  padding: 0; }
+  .modelsSection > .row {
+    width: 1280px;
+    margin: 0 auto; }
+
+.pagerNumbers {
+  z-index: 3;
+  width: 250px;
+  text-align: center;
+  min-height: 16px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: -8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #484848; }
+  .pagerNumbers span {
+    width: 21px;
+    height: 25px;
+    padding-top: 3px;
+    padding-left: 1px;
+    margin: -4px 3px 0 3px;
+    border-radius: 1px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: '__Roboto_5';
+    font-weight: 400;
+    display: block;
+    float: left;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    color: black; }
+    .pagerNumbers span:hover {
+      border: 1px solid #009999;
+      color: #009999; }
+    .pagerNumbers span.active {
+      background-color: #191919;
+      border: 1px solid black;
+      color: #00FFFF; }
+      .pagerNumbers span.active:hover {
+        border: 1px solid #009999; }
+  .pagerNumbers select {
+    background: #fff;
+    background-image: url(../img/angel.svg);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    width: 36px;
+    padding: 0 5px; }
+    .pagerNumbers select:focus, .pagerNumbers select:active {
+      border: 0;
+      outline-width: 0; }
+
+.tblModelsList.table > tbody > tr > td, .tblModelsList.table > thead > tr > td {
+  text-align: left;
+  padding: 9px 0 0 20px; }
+.tblModelsList .tableHeader {
+  height: 41px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+  .tblModelsList .tableHeader td {
+    font-size: 14px;
+    color: #42410B; }
+  .tblModelsList .tableHeader td:last-child {
+    padding-top: 2px;
+    padding-left: 90px; }
+  .tblModelsList .tableHeader .actionButtons {
+    font-size: 20px;
+    width: 41px;
+    height: 34px;
+    text-align: center;
+    padding: 5px;
+    padding-top: 4px;
+    cursor: pointer;
+    border-width: 2px;
+    border-radius: 2px; }
+.tblModelsList tr.tableRow {
+  height: 45px;
+  min-height: 45px;
+  border: 0;
+  border-bottom: 1px solid white;
+  border-top: 1px solid #ededeb; }
+.tblModelsList.table > tbody > tr.tableRow > td {
+  border: 0;
+  vertical-align: middle !important;
+  font-size: 14px;
+  color: black;
+  position: relative;
+  padding: 0 0 0 20px; }
+  .tblModelsList.table > tbody > tr.tableRow > td .accordion-toggle {
+    float: right;
+    margin-right: -13px;
+    margin-top: 8px; }
+  .tblModelsList.table > tbody > tr.tableRow > td .accordion-delete {
+    float: left;
+    margin-right: 20px;
+    margin-top: 8px;
+    color: #009999;
+    font-size: 17px;
+    cursor: pointer; }
+  .tblModelsList.table > tbody > tr.tableRow > td .closeBoxOuterWrapper {
+    display: block;
+    height: 45px;
+    width: 44px;
+    background-color: #191919;
+    cursor: pointer;
+    position: absolute;
+    right: 0; }
+    .tblModelsList.table > tbody > tr.tableRow > td .closeBoxOuterWrapper .closeBoxInnerWrapper {
+      position: absolute;
+      top: 7px;
+      left: 9px;
+      display: block;
+      height: 27px;
+      width: 28px;
+      background-color: #000000;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      padding-right: 8px;
+      padding-top: 2px;
+      cursor: pointer; }
+      .tblModelsList.table > tbody > tr.tableRow > td .closeBoxOuterWrapper .closeBoxInnerWrapper:hover {
+        border: 2px solid #00ffff;
+        padding-top: 0; }
+        .tblModelsList.table > tbody > tr.tableRow > td .closeBoxOuterWrapper .closeBoxInnerWrapper:hover img {
+          margin-left: 6px; }
+      .tblModelsList.table > tbody > tr.tableRow > td .closeBoxOuterWrapper .closeBoxInnerWrapper img {
+        margin-left: 8px; }
+  .tblModelsList.table > tbody > tr.tableRow > td.open:first-child:after {
+    top: 100%;
+    left: 16%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .tblModelsList.table > tbody > tr.tableRow > td.open:first-child:after {
+    border-color: rgba(13, 13, 13, 0);
+    border-top-color: white;
+    border-width: 12px;
+    margin-left: -12px;
+    top: 99%; }
+.tblModelsList.table > tbody > tr.tableRow.oddRow > td:first-child:after {
+  border-top-color: #ededeb; }
+.tblModelsList tr.innerDiv {
+  height: 346px;
+  background-color: #191919; }
+  .tblModelsList tr.innerDiv .editable {
+    background-repeat: no-repeat;
+    background-size: 445px;
+    position: relative;
+    background-position: center; }
+  .tblModelsList tr.innerDiv .saveButton {
+    display: block;
+    width: 76px;
+    height: 37px;
+    border: 3px solid #009999;
+    color: #009999;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 1px;
+    position: relative;
+    right: 55px;
+    margin-bottom: 20px;
+    background-color: black;
+    margin-right: 2px; }
+  .tblModelsList tr.innerDiv .thresholdActionDiv {
+    position: absolute;
+    top: 266px;
+    right: 55px; }
+  .tblModelsList tr.innerDiv .thresholdActionButtons {
+    display: block;
+    width: 76px;
+    height: 37px;
+    border: 2px solid #009999;
+    border-radius: 4px;
+    color: #009999;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 1px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    margin-right: 2px; }
+  .tblModelsList tr.innerDiv .thresholdDivActionButtons {
+    position: relative;
+    top: 0;
+    right: 40px; }
+  .tblModelsList tr.innerDiv .descriptionInput, .tblModelsList tr.innerDiv .tagsInput {
+    width: 256px;
+    min-height: 68px;
+    color: #555;
+    font-style: italic;
+    font-weight: 400;
+    padding: 6px;
+    background: white;
+    border: none;
+    resize: none;
+    height: 163px;
+    overflow: auto; }
+.tblModelsList.table > tbody > tr.innerDiv > td {
+  padding-left: 18px;
+  padding-top: 26px; }
+  .tblModelsList.table > tbody > tr.innerDiv > td .modelDescriptionColumn {
+    margin-top: 20px;
+    min-height: 210px; }
+  .tblModelsList.table > tbody > tr.innerDiv > td .thresholdTab {
+    height: 315px; }
+  .tblModelsList.table > tbody > tr.innerDiv > td h2, .tblModelsList.table > tbody > tr.innerDiv > td h3, .tblModelsList.table > tbody > tr.innerDiv > td h4, .tblModelsList.table > tbody > tr.innerDiv > td h5 {
+    margin-top: 0;
+    color: white; }
+  .tblModelsList.table > tbody > tr.innerDiv > td p {
+    color: #c7c7c7;
+    font-size: 14px; }
+    .tblModelsList.table > tbody > tr.innerDiv > td p.description, .tblModelsList.table > tbody > tr.innerDiv > td p.tags {
+      height: 165px;
+      overflow-y: auto; }
+  .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv {
+    padding-left: 100px; }
+    .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .yLeftTitle {
+      fill: #FF9900;
+      font-size: 17px;
+      line-height: 20px; }
+    .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .d3area {
+      margin-top: 40px; }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .d3area .bottomGlowLine {
+        width: 806px; }
+    .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .editButton {
+      display: block;
+      width: 76px;
+      height: 37px;
+      border: 3px solid #009999;
+      color: #009999;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      padding-top: 5px;
+      margin-right: 60px;
+      float: right;
+      background-color: black; }
+    .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection {
+      /* Upload File */
+      /***** Example custom styling *****/ }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box {
+        background: #F8F8F8;
+        border: 1px solid #999999;
+        width: 387px;
+        height: 151px;
+        text-align: center;
+        padding-top: 3px;
+        margin: 0 auto;
+        position: relative;
+        position: absolute;
+        top: 45px;
+        /*left: 85px;*/
+        width: 387px;
+        height: 160px;
+        border-radius: 5px;
+        overflow: hidden; }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box .fileName {
+          display: flex;
+          justify-content: center;
+          /* align horizontal */
+          align-items: center;
+          /* align vertical */
+          height: 100%; }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box .removeLink {
+          position: absolute;
+          color: #009999;
+          cursor: pointer;
+          top: 80%;
+          left: 0;
+          width: 100%;
+          text-align: center; }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box.dragover {
+          border: 5px dashed #999999; }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box .ngfDragDescription {
+          color: #AFAFAF;
+          animation: goSmaller1 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards; }
+          .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box .ngfDragDescription .browseLink {
+            color: #009999;
+            cursor: pointer; }
+@keyframes goSmaller1 {
+  from {
+    font-size: 0px; }
+  to {
+    font-size: 13px; } }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box .fa-upload {
+          display: inline-block;
+          background-color: #009999;
+          color: white;
+          line-height: 36px;
+          animation: goBigger1 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards;
+          padding-bottom: 4px;
+          margin-top: 34px;
+          margin-bottom: 10px; }
+@keyframes goBigger1 {
+  from {
+    width: 74px;
+    height: 74px;
+    border-radius: 37px;
+    font-size: 43.16667px;
+    line-height: 74px; }
+  to {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 23.33333px;
+    line-height: 40px; } }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box:hover .ngfDragDescription {
+          animation: goSmaller 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards; }
+@keyframes goSmaller {
+  from {
+    font-size: 13px; }
+  to {
+    font-size: 0px; } }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box:hover .fa-upload {
+          animation: goBigger 0.3s ease;
+          /* Safari, Chrome and Opera > 12.1 */
+          animation-fill-mode: forwards; }
+@keyframes goBigger {
+  from {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 23.33333px;
+    line-height: 40px; }
+  to {
+    width: 74px;
+    height: 74px;
+    border-radius: 37px;
+    font-size: 43.16667px;
+    line-height: 74px; } }
+        .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .drop-box .fileName {
+          color: black; }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection label.uploadLabel input[type="file"] {
+        position: fixed;
+        top: -1000px; }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .uploadLabel {
+        position: relative;
+        border-radius: 4px;
+        padding: 10px 23px;
+        margin: 2px;
+        background: #099;
+        display: inline-block;
+        left: 429px;
+        top: 128px;
+        height: 40px; }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .uploadLabel:hover {
+        background: #00A3A3; }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .uploadLabel:active {
+        background: #00A3A3; }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .uploadLabel :invalid + span {
+        color: #fff; }
+      .tblModelsList.table > tbody > tr.innerDiv > td .chartDiv .uploadModelSection .uploadLabel :valid + span {
+        color: #fff; }
+.tblModelsList tr.newModelForm {
+  height: 414px;
+  background-color: #000000; }
+.tblModelsList.table > tbody > tr.newModelForm > td {
+  background: url("../img/newFormBG.png") 445px center no-repeat;
+  padding-left: 18px;
+  padding-top: 26px; }
+  .tblModelsList.table > tbody > tr.newModelForm > td h2, .tblModelsList.table > tbody > tr.newModelForm > td h3, .tblModelsList.table > tbody > tr.newModelForm > td h4 {
+    margin-top: 0;
+    color: white; }
+  .tblModelsList.table > tbody > tr.newModelForm > td h5 {
+    margin-top: 15px;
+    color: white; }
+  .tblModelsList.table > tbody > tr.newModelForm > td.descriptionInput, .tblModelsList.table > tbody > tr.newModelForm > td.tagsInput {
+    width: 256px;
+    min-height: 68px;
+    color: #555;
+    font-style: italic;
+    font-weight: 400;
+    padding: 6px;
+    background: white;
+    border: none;
+    resize: none;
+    height: 89px;
+    overflow: auto; }
+  .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection {
+    /* Upload File */
+    /***** Example custom styling *****/ }
+    .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection label.uploadLabel input[type="file"] {
+      position: fixed;
+      top: -1000px; }
+    .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection .uploadLabel {
+      position: relative;
+      border-radius: 4px;
+      padding: 10px 23px;
+      margin: 2px;
+      background: #099;
+      display: inline-block;
+      left: 429px;
+      top: 128px;
+      height: 40px; }
+    .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection .uploadLabel:hover {
+      background: #00A3A3; }
+    .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection .uploadLabel:active {
+      background: #00A3A3; }
+    .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection .uploadLabel :invalid + span {
+      color: #fff; }
+    .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection .uploadLabel :valid + span {
+      color: #fff; }
+    .tblModelsList.table > tbody > tr.newModelForm > td .uploadModelSection .saveButton {
+      display: block;
+      width: 76px;
+      height: 37px;
+      border: 3px solid #009999;
+      color: #009999;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+      padding-top: 1px;
+      position: absolute;
+      top: 300px;
+      right: 40px;
+      background-color: black; }
+
+.tblModelsList tr.tableRow.lastRow {
+  border-bottom: 1px solid black !important; }
+
+.filtersTitle {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #7F7F7F;
+  font-size: 15px;
+  font-family: '__Roboto_5';
+  font-weight: 300; }
+
+/* vertical align center */
+/*-------- Tabs ---------*/
+/* custom inclusion of right, left and below tabs */
+.tabs-below > .nav-tabs,
+.tabs-right > .nav-tabs,
+.tabs-left > .nav-tabs {
+  border-bottom: 0; }
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none; }
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+  color: #777; }
+
+.tabs-below > .nav-tabs {
+  border-top: 1px solid #ddd; }
+
+.tabs-below > .nav-tabs > li {
+  margin-top: -1px;
+  margin-bottom: 0; }
+
+.tabs-below > .nav-tabs > li > a {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px; }
+
+.tabs-below > .nav-tabs > li > a:hover,
+.tabs-below > .nav-tabs > li > a:focus {
+  border-top-color: #ddd;
+  border-bottom-color: transparent; }
+
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-color: transparent #ddd #ddd #ddd; }
+
+.tabs-left > .nav-tabs > li,
+.tabs-right > .nav-tabs > li {
+  float: none; }
+
+.tabs-left > .nav-tabs > li > a,
+.tabs-right > .nav-tabs > li > a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px; }
+
+.tabs-left > .nav-tabs {
+  color: #999;
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd; }
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px; }
+
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  backgroud-color: #444 !important; }
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  border-right-color: #262626;
+  background-color: transparent;
+  color: aqua; }
+
+.tabs-right > .nav-tabs {
+  float: right;
+  margin-left: 19px;
+  border-left: 1px solid #ddd; }
+
+.tabs-right > .nav-tabs > li > a {
+  margin-left: -1px;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0; }
+
+.tabs-right > .nav-tabs > li > a:hover,
+.tabs-right > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #eeeeee #eeeeee #dddddd; }
+
+.tabs-right > .nav-tabs .active > a,
+.tabs-right > .nav-tabs .active > a:hover,
+.tabs-right > .nav-tabs .active > a:focus {
+  border-color: #ddd #ddd #ddd transparent;
+  border-left-color: #ffffff; }
+
+li.quadroTabs > .dvDateFilters {
+  width: 100%; }
+
+/*--------------- End Tabs -----------------*/
+/*--------------- Chart Menu ---------------*/
+.glowLine, .bottomGlowLine {
+  z-index: 168;
+  width: 899px;
+  height: 1px;
+  -pie-box-shadow: 0px 0px 3px 1px #00FFFF;
+  box-shadow: 0px 0px 3px #00FFFF, 0px 0px 3px #00FFFF;
+  background-color: #FFFFFF;
+  margin: 7px 0 11px 2px; }
+
+.bottomGlowLine {
+  position: absolute;
+  top: 201px;
+  left: 2px; }
+
+.circlegraph {
+  padding-top: 57px;
+  background: url("../img/Elephant-01-01.png") calc(50% - 41px) 1px no-repeat #191919;
+  height: 507px; }
+  .circlegraph > .row {
+    width: 1280px;
+    margin: 0 auto;
+    text-align: left; }
+  .circlegraph h1 {
+    color: #CCC;
+    font-size: 32px; }
+  .circlegraph .row#chartContainer {
+    width: 931px;
+    position: relative; }
+    .circlegraph .row#chartContainer > .col {
+      padding: 0; }
+    .circlegraph .row#chartContainer #sunburstWrapper {
+      position: absolute;
+      top: -68px;
+      left: 851px; }
+      .circlegraph .row#chartContainer #sunburstWrapper #sunburstOuterCircle {
+        z-index: 176;
+        width: 418px;
+        height: 418px;
+        -pie-box-shadow: none;
+        box-shadow: 0px 0px 28px rgba(0, 255, 255, 0.5) inset, 0px 0px 28px rgba(0, 255, 255, 0.5) inset;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #FFFFFF;
+        background-color: transparent;
+        border-radius: 410px;
+        padding-left: 5px;
+        padding-top: 5px;
+        position: relative;
+        margin-right: -10000px;
+        margin-top: 87px; }
+        .circlegraph .row#chartContainer #sunburstWrapper #sunburstOuterCircle .sunburstChart {
+          position: relative;
+          top: -3px;
+          left: 7px;
+          z-index: 1000; }
+          .circlegraph .row#chartContainer #sunburstWrapper #sunburstOuterCircle .sunburstChart path {
+            stroke: #000;
+            stroke-width: 2;
+            fill-rule: evenodd;
+            z-index: 1000; }
+  .circlegraph ul.chartMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .circlegraph ul.chartMenu li {
+      float: left;
+      font-family: "__Roboto_5";
+      font-size: 16px;
+      padding: 27px 0 1px 27px; }
+      .circlegraph ul.chartMenu li.active {
+        font-weight: 700; }
+        .circlegraph ul.chartMenu li.active a {
+          color: #fcfcfc;
+          text-decoration: none; }
+          .circlegraph ul.chartMenu li.active a:hover {
+            text-decoration: none;
+            color: #fcfcfc; }
+      .circlegraph ul.chartMenu li a {
+        color: #5e5e5e; }
+        .circlegraph ul.chartMenu li a:hover {
+          text-decoration: none;
+          color: #fcfcfc; }
+  .circlegraph .tab-content.activities {
+    /*-------------- Arrow Box -----------------*/
+    /*-------------- End Arrow Box -------------*/ }
+    .circlegraph .tab-content.activities .panel-heading {
+      padding: 0; }
+    .circlegraph .tab-content.activities .panel-body {
+      padding: 0; }
+    .circlegraph .tab-content.activities .dateFilters.list-inline {
+      margin: 10px 0 0 2px;
+      width: 800px; }
+    .circlegraph .tab-content.activities .dvDateFilters {
+      text-align: center;
+      font-size: 16px;
+      color: #999;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 18px 0 0 0;
+      width: 100%;
+      height: 86px;
+      cursor: pointer; }
+      .circlegraph .tab-content.activities .dvDateFilters:hover {
+        border: 1px solid #00FFFF;
+        color: white; }
+      .circlegraph .tab-content.activities .dvDateFilters.arrow_box {
+        cursor: default;
+        font-weight: 700;
+        color: white; }
+    .circlegraph .tab-content.activities .arrow_box {
+      position: relative;
+      background: transparent;
+      border: 1px solid #00FFFF; }
+    .circlegraph .tab-content.activities .arrow_box:after, .circlegraph .tab-content.activities .arrow_box:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none; }
+    .circlegraph .tab-content.activities .arrow_box:after {
+      border-color: rgba(13, 13, 13, 0);
+      border-top-color: #171717;
+      border-width: 13px;
+      margin-left: -13px;
+      top: 99%; }
+    .circlegraph .tab-content.activities .arrow_box:before {
+      border-color: rgba(14, 204, 191, 0);
+      border-top-color: #00FFFF;
+      border-width: 14px;
+      margin-left: -14px; }
+
+.lm {
+  border-bottom: 1px solid #168686; }
+
+/*--------------- End Chart Menu -----------*/
+/*--------------- D3 Charts ----------------*/
+.d3area {
+  min-width: 810px;
+  max-height: 230px;
+  position: relative;
+  top: -29px !important;
+  /*border-bottom: #168686 1px solid;*/ }
+
+.axis path,
+.axis line {
+  fill: none;
+  shape-rendering: crispEdges; }
+
+.x.axis path {
+  display: none; }
+
+.d3Value {
+  fill: #fff;
+  font-size: 43px;
+  font-family: '__Roboto Condensed_5' !important;
+  z-index: 10000000000 !important; }
+
+.area {
+  fill: url(#temperature-gradient);
+  stroke-width: 1;
+  stroke: #00F7F7;
+  -pie-box-shadow: 0px 0px 3px 1px #00FFFF;
+  box-shadow: 0px 0px 3px #00FFFF, 0px 0px 3px #00FFFF; }
+
+.line, .extraLine {
+  fill: none;
+  stroke: rgba(0, 255, 255, 0.3);
+  stroke-width: 4px; }
+
+.extraLine {
+  stroke: #00ffff;
+  stroke-width: 0.5px; }
+
+.rightLineBorder {
+  stroke: "FF6600";
+  sroke-width: "2"; }
+
+.x.axis {
+  fill: #666666;
+  font-family: '__Roboto Condensed_5';
+  font-weight: 400; }
+
+.y.axis {
+  fill: #C8C8C8;
+  border: 1px solid white; }
+
+.y.axis text {
+  fill: #C8C8C8;
+  font-family: '__Roboto_5'; }
+  .y.axis text.yLeftTitle {
+    font-size: 17px !important; }
+
+.xTitle {
+  fill: #666666; }
+
+.yRect {
+  fill: #333333; }
+
+.grid .tick {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges; }
+
+.grid path {
+  stroke-width: 0; }
+
+#depth0 {
+  position: relative;
+  top: 55px; }
+
+#depth0 .nums {
+  color: #E0E0E0;
+  vertical-align: bottom;
+  font-size: 28px;
+  font-family: '__Roboto_5';
+  font-weight: 100;
+  position: relative;
+  left: 10px;
+  top: 9px; }
+  #depth0 .nums > span > sup {
+    color: #949494;
+    font-size: 13px; }
+
+#depth0 .nums2 {
+  color: #E0E0E0;
+  vertical-align: bottom;
+  font-size: 28px;
+  font-family: '__Roboto_5';
+  font-weight: 100;
+  position: relative;
+  left: 10px;
+  top: 3px; }
+  #depth0 .nums2 > span > sup {
+    color: #949494;
+    font-size: 13px; }
+
+#depth0 .title {
+  color: #fff;
+  font-family: '__Roboto_5';
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 5px;
+  position: relative;
+  font-size: 15px;
+  left: 11px;
+  top: 0px; }
+
+#depth0 .title2 {
+  color: #fff;
+  font-family: '__Roboto_5';
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 5px;
+  position: relative;
+  font-size: 15px;
+  left: 11px;
+  top: -5px; }
+
+#depth1 {
+  position: relative;
+  top: 155px; }
+
+#depth1 > span {
+  color: #E6FDFE;
+  font-size: 18px;
+  font-family: '__Roboto Condensed_5';
+  font-weight: 400; }
+
+#depth2 > div {
+  position: relative;
+  top: 147px;
+  right: 89px;
+  font-family: '__Roboto Condensed_5';
+  font-size: 16px;
+  color: white; }
+
+#depth2 > div > table > tbody > tr > td {
+  text-align: left; }
+
+.dp2Name {
+  font-size: 26px; }
+
+#explanation {
+  position: absolute;
+  top: 80px;
+  left: 130px;
+  width: 140px;
+  text-align: center;
+  color: #fff; }
+
+#percentage {
+  font-size: 1.5em; }
+
+/*--------------- End D3 Charts ------------*/
+/*-------------- Customizing Checkboxes ----------------*/
+.input input[type='checkbox']:checked + label:before {
+  background: #009999;
+  border-color: #009999; }
+
+.input input[type='checkbox'] + label:before {
+  width: 13px;
+  height: 13px; }
+
+.input input[type='checkbox'] + label:after {
+  left: 4px;
+  bottom: 10px;
+  width: 5px;
+  height: 9px; }
+
+/*-------------- End of Customized Checkboxes ----------*/
+/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: '__Roboto_5';
+  src: url("../fonts/roboto-v15-latin-300.eot");
+  src: local("☺"), url("../fonts/roboto-v15-latin-300.woff") format("woff"), url("../fonts/roboto-v15-latin-300.svg") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: '__Roboto_5';
+  src: url("../fonts/roboto-v15-latin-regular.eot");
+  src: local("☺"), url("../fonts/roboto-v15-latin-regular.woff") format("woff"), url("../fonts/roboto-v15-latin-regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: '__Roboto_5';
+  src: url("../fonts/roboto-v15-latin-700.eot");
+  src: local("☺"), url("../fonts/roboto-v15-latin-700.woff") format("woff"), url("../fonts/roboto-v15-latin-700.svg") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: '__Roboto Condensed_5';
+  src: url("../fonts/roboto-condensed-v13-latin-regular.eot");
+  src: local("☺"), url("../fonts/roboto-condensed-v13-latin-regular.woff") format("woff"), url("../fonts/roboto-condensed-v13-latin-regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: '__Roboto_5';
+  src: url("../fonts/roboto-v15-latin-italic.eot");
+  src: local("☺"), url("../fonts/roboto-v15-latin-italic.woff") format("woff"), url("../fonts/roboto-v15-latin-italic.svg") format("svg");
+  font-weight: 400;
+  font-style: italic; }
+.noPadding {
+  padding: 0; }
+
+.areaChart {
+  position: relative; }
+  .areaChart .canvasWrapper {
+    overflow: hidden;
+    display: block;
+    width: 721px;
+    height: 170px;
+    position: absolute;
+    bottom: 52px;
+    left: 82px; }
+    .areaChart .canvasWrapper .canvasAreaChart {
+      height: 170px;
+      width: 721px;
+      position: absolute;
+      bottom: 0;
+      left: -1px;
+      animation: goTaller 1.5s;
+      /* Safari, Chrome and Opera > 12.1 */
+      -webkit-animation: goTaller 1.5s;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: goTaller 1.5s;
+      /* Safari, Chrome and Opera > 12.1 */ }
+@keyframes goTaller {
+  from {
+    bottom: -170px; }
+  to {
+    bottom: 0; } }
+@-webkit-keyframes goTaller {
+  from {
+    bottom: -170px; }
+  to {
+    bottom: 0; } }
+@-moz-keyframes goTaller {
+  from {
+    bottom: -170px; }
+  to {
+    bottom: 0; } }
+.toast-top-center-modified {
+  top: 15px !important;
+  right: 0 !important;
+  width: 100% !important; }
+
+#toast-container.toast-top-center-modified > div {
+  width: 650px !important;
+  padding-top: 15px;
+  margin: auto;
+  margin-top: 5px !important; }
+
+.modal {
+  top: 70px; }
+
+.modelTab.tabs-left {
+  border: 0px !important; }
+.modelTab.nav-tabs > li {
+  height: 50px;
+  width: 155px;
+  cursor: pointer; }
+.modelTab.nav-tabs > li.active > a {
+  background-color: transparent !important;
+  border-right: #191919 solid 1px;
+  color: #02E2E2; }
+.modelTab.nav-tabs > li > a, .modelTab.nav-tabs > li > a:focus, .modelTab.nav-tabs > li > a:hover {
+  background-color: transparent !important;
+  border: 0; }
+.modelTab.nav-tabs > li > a:focus, .modelTab.nav-tabs > li > a:hover {
+  color: #02E2E2; }
+.modelTab.nav-tabs > li > a {
+  color: #ddd;
+  padding: 20px 10px 0 10px; }
+.modelTab.nav-tabs > li.active {
+  border-bottom: 1px solid #02e2e2; }
+.modelTab.nav-tabs > li.active > a, .modelTab.nav-tabs > li.active > a:focus, .modelTab.nav-tabs > li.active > a:hover {
+  border: 0px; }
+
+.thresholdHeaders {
+  font-size: 1.5em;
+  width: auto;
+  height: auto;
+  text-align: left;
+  font-weight: normal;
+  line-height: 1em;
+  margin-top: 14px;
+  clear: none;
+  min-height: 0px;
+  font-family: __Roboto_5;
+  text-transform: none; }
+
+.threshold {
+  width: 500px; }
+  .threshold .table {
+    height: 200px !important; }
+  .threshold td {
+    background-color: transparent;
+    border: 0 !important;
+    padding-left: 0;
+    position: relative; }
+    .threshold td .glyphicon {
+      left: 93%;
+      top: -23px;
+      color: black; }
+  .threshold input {
+    width: 350px;
+    border-radius: 2px; }
+
+.alerts .table, .thresholds .table, .threshold .table {
+  height: 240px;
+  width: 770px;
+  overflow-y: scroll;
+  display: block;
+  margin-top: 20px;
+  background-color: transparent; }
+  .alerts .table::-webkit-scrollbar, .thresholds .table::-webkit-scrollbar, .threshold .table::-webkit-scrollbar {
+    width: 1em; }
+  .alerts .table::-webkit-scrollbar-track, .thresholds .table::-webkit-scrollbar-track, .threshold .table::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px black; }
+  .alerts .table::-webkit-scrollbar-thumb, .thresholds .table::-webkit-scrollbar-thumb, .threshold .table::-webkit-scrollbar-thumb {
+    background-color: #ddd; }
+  .alerts .table::-webkit-scrollbar-corner, .thresholds .table::-webkit-scrollbar-corner, .threshold .table::-webkit-scrollbar-corner {
+    background-color: transparent; }
+.alerts .table-striped > tbody > tr:nth-of-type(odd), .alerts .table-striped > tbody > tr:nth-of-type(even), .thresholds .table-striped > tbody > tr:nth-of-type(odd), .thresholds .table-striped > tbody > tr:nth-of-type(even), .threshold .table-striped > tbody > tr:nth-of-type(odd), .threshold .table-striped > tbody > tr:nth-of-type(even) {
+  background-color: transparent; }
+.alerts .table-striped > tbody > tr:nth-child(odd) > td, .alerts .table-striped > tbody > tr:nth-child(even) > td, .thresholds .table-striped > tbody > tr:nth-child(odd) > td, .thresholds .table-striped > tbody > tr:nth-child(even) > td, .threshold .table-striped > tbody > tr:nth-child(odd) > td, .threshold .table-striped > tbody > tr:nth-child(even) > td {
+  width: 950px;
+  background-color: transparent;
+  border-color: #333333;
+  color: #ddd; }
+
+#toggleKamanjaStatus .toggle {
+  margin-top: 10px; }
+  #toggleKamanjaStatus .toggle.btn-primary:hover, #toggleKamanjaStatus .toggle.btn-primary {
+    border-color: black; }
+  #toggleKamanjaStatus .toggle .btn-primary:hover, #toggleKamanjaStatus .toggle .btn-primary {
+    background-color: #009999; }
+
+#viewBlacklist {
+  padding-top: 5px;
+  /*border: 1px solid #AFAFAF;*/
+  height: 155px;
+  width: 700px;
+  position: relative;
+  right: 7px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.thresholdViewContainer {
+  height: 280px; }
+
+.lstIPs {
+  width: 365px;
+  word-wrap: break-word; }
+
+.hiddenRow .fileName {
+  color: #ddd;
+  font-size: 22px;
+  vertical-align: middle;
+  padding-left: 10px;
+  padding-bottom: 10px; }
+  .hiddenRow .fileName img {
+    margin-top: -8px; }
+
+.OutsideHours {
+  margin-top: 20px; }
+  .OutsideHours .outSideTitle {
+    color: #ff9900 !important; }
+  .OutsideHours .outSideVal {
+    color: #ddd !important; }
+
+.modelDescriptionColumn .drop-box {
+  width: 250px !important;
+  top: 20px !important; }
+
+#loginbox button {
+  display: inline;
+  width: 150px;
+  height: 53px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #009999;
+  color: white;
+  position: relative;
+  border: 0;
+  margin: 37px auto 0 auto; }
+#loginbox input[type=text],
+#loginbox input[type=password] {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+
+#login {
+  padding-top: 50px; }
+
+#login .form-wrap {
+  width: 30%;
+  margin: 0 auto; }
+
+#login h1 {
+  color: #009999;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px; }
+
+#login .form-group {
+  margin-bottom: 25px; }
+
+#login .checkbox {
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+#login .checkbox.show:before {
+  content: '\e013';
+  color: #1fa67b;
+  font-size: 17px;
+  margin: 1px 0 0 3px;
+  position: absolute;
+  pointer-events: none;
+  font-family: 'Glyphicons Halflings'; }
+
+#login .checkbox .character-checkbox {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  display: inline-block; }
+
+#login .checkbox .label {
+  color: #6d6d6d;
+  font-size: 13px;
+  font-weight: normal; }
+
+#login .btn.btn-custom {
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+#login .forget {
+  font-size: 13px;
+  text-align: center;
+  display: block; }
+
+.btn-custom {
+  color: #fff;
+  background-color: #009999; }
+
+.btn-custom:hover,
+.btn-custom:focus {
+  color: #fff; }
+
+#loginform {
+  border: 1px solid black;
+  padding: 20px;
+  width: 55%; }
+
+#logoutdv {
+  padding-top: 17px;
+  line-height: 18px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 18px; }
+  #logoutdv a {
+    color: #009999; }
+
+.checkbox {
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

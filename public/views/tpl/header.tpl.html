@@ -1,0 +1,26 @@
+<nav class="navbar-fixed-top" id="header">
+    <div class="row">
+        <div class="col-xs-4">
+            <span class="headerTitle">
+                Flare Command Center
+            </span>
+            <span class="headerDescription">
+                {{headerTitle}}
+            </span>
+        </div>
+        <div class="col-xs-6 noPadding">
+            <div class="row pull-right headerCounterWrapper">
+                <div class="col-xs-6 upperRightVolume">
+                    CURRENT SYSTEM<br/>
+                    WIDE VOLUME
+                </div>
+                <div class=" col-xs-6 headerCounter">
+                    <div style="width:110px; display:inline-block; text-align: right;">{{currentValue}}</div><span class="headerCounterSlash">/</span><span class="headerCounterSec">SEC</span>
+                </div>
+            </div>
+        </div>
+        <div id="logoutdv" class="col-xs-2">
+            <span><a href="javascript:void(0);" ng-click="logout();">Logout</a></span>
+        </div>
+    </div>
+</nav>

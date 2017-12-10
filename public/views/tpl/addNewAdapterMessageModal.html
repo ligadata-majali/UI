@@ -1,0 +1,38 @@
+<div class="modal-header">
+    <h3 class="modal-title" id="modal-title">Add New Message Adapter Binding</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <div class="">
+        <form class="" ng-show="step == 1">
+            <h3>Upload Message Adapter</h3>
+            <div class="form-group">
+                <label for="modelConfig"></label>
+                <input id="modelConfig" type="file" ngf-select="setConfigList($file)" class="form-control"/>
+            </div>
+            <div class="form-group dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{selectedConfigName}}
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li ng-repeat="config in listConfig">
+                        <a href="#" ng-click="setSelectedConfig($event, config)">{{config}}</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" ng-click="addModelConfig()">Upload</button>
+            </div>
+        </form>
+        <form class="" ng-show="step == 2">
+            <h3>Upload Model</h3>
+            <div class="form-group">
+                <input id="modelfile" type="file" ngf-select="onModelFileSelectd($file)" class="form-coontrol"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" ng-click="uploadModel()">Upload</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal-footer">
+</div>

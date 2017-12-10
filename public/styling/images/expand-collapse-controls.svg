@@ -1,0 +1,34 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.905 28.856">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #099;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: #ccc;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <title>5342cbe2-7786-4717-87ed-65375680e7fd</title>
+  <g id="Expand_collapse_controls" data-name="Expand collapse controls">
+    <rect class="cls-1" x="0.5" y="0.5" width="45.128" height="27.856" rx="1" ry="1"/>
+    <line class="cls-2" x1="7.464" y1="6.35" x2="39.499" y2="6.35"/>
+    <line class="cls-2" x1="7.464" y1="11.921" x2="39.499" y2="11.921"/>
+    <line class="cls-2" x1="7.464" y1="17.492" x2="39.499" y2="17.492"/>
+    <line class="cls-2" x1="7.464" y1="22.785" x2="39.499" y2="22.785"/>
+    <line class="cls-3" x1="52.87" y1="7.186" x2="84.905" y2="7.186"/>
+    <line class="cls-3" x1="52.87" y1="14.428" x2="84.905" y2="14.428"/>
+    <line class="cls-3" x1="52.87" y1="21.671" x2="84.905" y2="21.671"/>
+  </g>
+</svg>

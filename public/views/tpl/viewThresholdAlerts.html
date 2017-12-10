@@ -1,0 +1,34 @@
+<div class="thresholdViewContainer thresholds ">
+    <div ng-show="item.name == 'blacklistipaddr'" id="viewBlacklist" class="view">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="color:#ff9900;">BLACK LISTED IP's</div>
+                <hr>
+                <table class="table table-striped">
+                    <tr ng-repeat="ip in listips track by $index">
+                        <td  class="tblBlacklist">
+                            {{ip}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div ng-show="item.name == 'outsidenormalbusinesshours'" id="viewOutside" class="view OutsideHours">
+        <div>
+            <div>
+                <div class="outSideTitle">BUSINESS HOUR START TIME</div>
+                <div style="height:30px;" class="txtStartHour outSideVal">{{startHour}}</div>
+            </div>
+            <div>
+                <div class="outSideTitle">BUSINESS HOUR END TIME</div>
+                <div style="height:30px" class="txtEndHour outSideVal">{{endHour}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="thresholdActionDiv">
+        <button ng-click="item.isEditableThreshold = true;" ng-show="!item.isEditable"
+                class="thresholdActionButtons pull-right">EDIT
+        </button>
+    </div>
+</div>

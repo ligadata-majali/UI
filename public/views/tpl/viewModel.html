@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-3 modelDescriptionColumn">
+        <h3>{{item.name}}</h3>
+        <p>ACTIVATED: {{item.status}}</p>
+        <p>VERSION: {{item.version}}</p>
+        <h5>
+            DESCRIPTION:
+        </h5>
+        <p class="description">
+            <span>{{item.description}}</span>
+        </p>
+        <h5>
+            TAGS:
+        </h5>
+        <p class="tags">
+            <span >{{item.tags}}</span>
+        </p>
+    </div>
+    <div class="col-md-9 chartDiv">
+        <div  class="areaChart">
+            <area-chart models-number="1" interval="interval"
+                        height="258" width="792"
+                        data="modelArrays[item.originalName]"></area-chart>
+            <div class="canvasWrapper">
+                <canvas class="canvasAreaChart" canvas-area-chart height="170" width="720"
+                        models-number="1" interval="interval"
+                        state="{{item.isEditable}}"
+                        height="258"
+                        data="modelArrays[item.originalName]"></canvas>
+            </div>
+        </div>
+        <button ng-click="deleteModelOpen(item)"
+                class="saveButton pull-right">Delete
+        </button>
+        <button ng-click="item.isEditable = true"
+                class="saveButton pull-right">EDIT
+        </button>
+    </div>
+</div>

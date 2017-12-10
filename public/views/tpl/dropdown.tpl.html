@@ -1,0 +1,10 @@
+<div class="" uib-dropdown>
+  <button parentId type="button" ng-model="SelectedNoServiceCode" class="btn btn-default" uib-dropdown-toggle>
+    <span ng-if="isPlaceHolder"> {{placeholder}}  <span class="caret"></span></span>
+    <span ng-if="!isPlaceHolder"><span ng-show="showIcon()"> <img ng-src="{{GetImageUrl(selectedItem)}}" /> </span> {{display}} <span class="caret"></span></span>
+  </button>
+  <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+    <li ng-repeat="item in list" ng-click="select(item)" ng-class="{selected : isSelected(item)}"
+    role="menuitem"><span ng-show="showIcon()"> <img ng-src="{{GetImageUrl(item)}}" /> </span> {{property != undefined ? item[property] : item}} <i class="fa fa-check"></i></li>
+  </ul>
+</div>

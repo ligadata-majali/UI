@@ -1,0 +1,26 @@
+<div class="modelDescriptionColumn">
+    <div class="row">
+        <div class="col-md-4">
+            <div style="min-height: 80px; display: block;">
+                <div style="color:#ff9900;">VERSION</div>
+                <div style="color:#dddddd;">{{item.version}}</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div style="min-height: 80px; display: block;">
+                <div style="color:#ff9900;">DESCRIPTION</div>
+                <div style="color:#dddddd;">{{item.description}}</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div style="min-height: 80px; display: block;">
+                <div style="color:#ff9900;">TAGS</div>
+                <div style="color:#dddddd;">{{item.tags}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<button ng-click="item.isEditable = true;" ng-show="!item.isEditable"
+        class="saveButton  thresholdActionButtons pull-right">EDIT
+</button>

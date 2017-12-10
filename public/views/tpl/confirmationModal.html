@@ -1,0 +1,21 @@
+<img class="closeButton" id="u2473" src="img/artwork-2.svg" width="14" height="18" alt=""
+     data-mu-svgfallback="img/artwork%202_poster_.png" ng-click="closeModal()">
+<div class="modal-header addModelHeader">
+    <p class="modal-title addModalTitle">{{title}}</p>
+</div>
+<div class="modal-body">
+    <div class="modalControls text-center">
+        <form  class="message" novalidate>
+            <div class="inputs">
+                <div class="form-group">
+                    <p class="modal-sub-title addModalTitle">{{message}}</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="form-control btnAddModel" ng-click="cancel(); ">Cancel
+                </button>
+                <button class="form-control btnAddModel" ng-click="ok();">OK</button>
+            </div>
+        </form>
+    </div>
+</div>
