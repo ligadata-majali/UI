@@ -385,7 +385,7 @@ angular.module('kmapp')
                             scope.selectedProjectName = d.name;
                             scope.fillArea()(d.id, 0);
                         } else if (d.depth == 2) {
-                            scope.selectedModelName = d.name;
+                            scope.selectedModelName = d.displayName;
                             var currentDate = moment(Date.now());
                             var createdAt = moment(d.createdAt);
                             scope.selectedModelAge = currentDate.diff(createdAt, 'minutes');

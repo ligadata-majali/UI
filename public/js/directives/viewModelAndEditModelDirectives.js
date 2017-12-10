@@ -146,7 +146,7 @@ angular.module('kmapp')
 
               var alertDate = moment(data.slice(0, 2).join(':')).format('DD-MM-YYYY');
               var title = alertDate + " " + data.slice(3).join('').trim().split(' ').splice(0, 4).join(' ');
-              var content = alertDate + data.slice(3).join('');
+              var content = data.slice(3).join('');
               return {
                 title: title,
                 content: content
